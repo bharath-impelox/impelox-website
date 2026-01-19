@@ -26,7 +26,7 @@ const GrowthMetrics: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-6xl mx-auto">
           {/* Top Row */}
           {/* Card 1 - Tablet Image */}
-          <div className="md:col-span-4 rounded-xl overflow-hidden shadow-sm min-h-[180px]">
+          <div className="md:col-span-4 rounded-xl overflow-hidden  min-h-[180px]">
             <img 
               src="/images/tablet_card.png" 
               alt="Tablet card" 
@@ -50,7 +50,7 @@ const GrowthMetrics: React.FC = () => {
           </div>
 
           {/* Card 3 - Tablet Image */}
-          <div className="md:col-span-4 rounded-xl overflow-hidden shadow-sm min-h-[180px]">
+          <div className="md:col-span-4 rounded-xl overflow-hidden  min-h-[180px]">
             <img 
               src="/images/tablet_card.png" 
               alt="Tablet card" 
