@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plus } from 'lucide-react';
+
 
 const GrowthMetrics: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, RotateCw, LayoutGrid, Plus, ClipboardCheck, CalendarPlus, FileText, MoreVertical, Percent, RotateCcw } from 'lucide-react';
+import { Camera, LayoutGrid, ClipboardCheck, CalendarPlus, FileText, Percent, RotateCcw } from 'lucide-react';
 
 const ProductsHowItWorks: React.FC = () => {
   const steps = [

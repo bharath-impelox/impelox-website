@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Eye } from 'lucide-react';
+import { Eye } from 'lucide-react';
 
 const AboutHero: React.FC = () => {
   return (
