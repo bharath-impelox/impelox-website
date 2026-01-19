@@ -1,0 +1,50 @@
+import React from 'react';
+
+const Na2Hero: React.FC = () => {
+  return (
+    <section className="bg-gray-100 py-20 px-6">
+      <div className="container mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-6">
+           <span className="text-sm shadow-sm bg-white  font-medium mb-2 p-2 rounded-xl">
+              <span style={{
+                background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
+              }} className=' text-white rounded-xl p-1'>Na2</span> A Human Bot That Never Sleeps</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              Na2 the AI that runs your operations
+            </h1>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              A multi-agent platform that automates bookings, follow-ups, and customer communication — 24/7, across every channel.
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4 pt-4">
+              <button 
+                className="text-white px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-base"
+                style={{
+                  background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
+                }}
+              >
+                See Na2 In Action
+              </button>
+              <button className="bg-white shadow  px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium text-base">
+                Talk To Our Team
+              </button>
+            </div>
+          </div>
+
+          {/* Right Visual */}
+          <div className="relative">
+            <div className="bg-gray-100 rounded-2xl p-8 h-96 flex items-center justify-center">
+              <p className="text-gray-400 text-lg">Product image</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Na2Hero;
+

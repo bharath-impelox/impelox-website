@@ -1,0 +1,72 @@
+import React from 'react';
+
+const ProductsCTA: React.FC = () => {
+  return (
+    <section className="py-20 px-6">
+      <div className="container mx-auto">
+        <div 
+          className="rounded-2xl p-12 md:p-16 text-center relative overflow-hidden"
+          style={{
+            backgroundImage: 'url(/images/na2-bottom-bg.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          {/* Decorative wave shapes */}
+          <div className="absolute inset-0 opacity-20 z-10">
+            <div className="absolute top-0 left-0 w-full h-full">
+              <svg className="w-full h-full" viewBox="0 0 1440 640" preserveAspectRatio="none">
+                <path
+                  d="M0,200 Q360,150 720,200 T1440,200 L1440,640 L0,640 Z"
+                  fill="white"
+                  opacity="0.3"
+                />
+                <path
+                  d="M0,300 Q360,250 720,300 T1440,300 L1440,640 L0,640 Z"
+                  fill="white"
+                  opacity="0.2"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div className="relative z-10">
+            <p className="text-[#0040C1] text-sm mb-4">• GET STARTED</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Ready to see the products in action?
+            </h2>
+            
+            <p className="text-gray-700 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+              Start with one product or deploy the full suite. We'll help you find the right configuration.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+              <button
+                className="text-white px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-base whitespace-nowrap"
+                style={{
+                  background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
+                }}
+              >
+                Schedule a Demo →
+              </button>
+              
+              <button
+                className="bg-white text-[#1B44FE] px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-base whitespace-nowrap border-2 border-gray-200"
+              >
+                Talk to Sales
+              </button>
+            </div>
+
+            <p className="text-gray-600 text-sm">
+              Free consultation. Available in English and Japanese.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProductsCTA;
+
