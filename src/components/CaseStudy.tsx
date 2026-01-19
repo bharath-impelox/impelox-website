@@ -39,7 +39,7 @@ const CaseStudy: React.FC = () => {
             </div>
 
             {/* Title */}
-            <h2 className="text-slate-800 text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-slate-800 text-4xl md:text-5xl font-bold">
               US Chiropractic Network
             </h2>
 
