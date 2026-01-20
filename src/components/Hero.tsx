@@ -24,7 +24,6 @@ const Hero: React.FC = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
       },
     },
   };
@@ -36,7 +35,6 @@ const Hero: React.FC = () => {
       scale: 1,
       transition: {
         duration: 0.8,
-        ease: "easeOut",
       },
     },
   };
@@ -218,7 +216,7 @@ const Hero: React.FC = () => {
                         style={{ height: `${height}%` }}
                         initial={{ height: 0 }}
                         animate={{ height: `${height}%` }}
-                        transition={{ delay: 1 + idx * 0.1, duration: 0.5, ease: "easeOut" }}
+                        transition={{ delay: 1 + idx * 0.1, duration: 0.5, ease: [0.42, 0, 0.58, 1] }}
                       />
                     ))}
                   </div>

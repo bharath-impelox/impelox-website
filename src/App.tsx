@@ -18,18 +18,10 @@ const pageVariants = {
   animate: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.4,
-      ease: "easeOut",
-    },
   },
   exit: {
     opacity: 0,
     y: -20,
-    transition: {
-      duration: 0.3,
-      ease: "easeIn",
-    },
   },
 };
 
@@ -47,6 +39,7 @@ function AnimatedRoutes() {
               animate="animate"
               exit="exit"
               variants={pageVariants}
+              transition={{ duration: 0.4, ease: [0.42, 0, 0.58, 1] }}
             >
               <Home />
             </motion.div>
@@ -60,6 +53,7 @@ function AnimatedRoutes() {
               animate="animate"
               exit="exit"
               variants={pageVariants}
+              transition={{ duration: 0.4, ease: [0.42, 0, 0.58, 1] }}
             >
               <About />
             </motion.div>
@@ -73,6 +67,7 @@ function AnimatedRoutes() {
               animate="animate"
               exit="exit"
               variants={pageVariants}
+              transition={{ duration: 0.4, ease: [0.42, 0, 0.58, 1] }}
             >
               <Products />
             </motion.div>
@@ -86,6 +81,7 @@ function AnimatedRoutes() {
               animate="animate"
               exit="exit"
               variants={pageVariants}
+              transition={{ duration: 0.4, ease: [0.42, 0, 0.58, 1] }}
             >
               <ProductNa2 />
             </motion.div>
@@ -99,6 +95,7 @@ function AnimatedRoutes() {
               animate="animate"
               exit="exit"
               variants={pageVariants}
+              transition={{ duration: 0.4, ease: [0.42, 0, 0.58, 1] }}
             >
               <ContactUs />
             </motion.div>
@@ -112,6 +109,7 @@ function AnimatedRoutes() {
               animate="animate"
               exit="exit"
               variants={pageVariants}
+              transition={{ duration: 0.4, ease: [0.42, 0, 0.58, 1] }}
             >
               <Careers />
             </motion.div>
@@ -125,6 +123,7 @@ function AnimatedRoutes() {
               animate="animate"
               exit="exit"
               variants={pageVariants}
+              transition={{ duration: 0.4, ease: [0.42, 0, 0.58, 1] }}
             >
               <Services />
             </motion.div>
