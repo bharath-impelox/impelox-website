@@ -1,41 +1,43 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const OurJourney: React.FC = () => {
+  const { t } = useTranslation();
   const milestones = [
     {
       year: '2021',
-      title: 'Company Founded',
-      description: 'Started our journey in Contextual Intelligence and SaaS',
+      title: t('aboutPage.ourJourney.milestones.2021.title'),
+      description: t('aboutPage.ourJourney.milestones.2021.description'),
       side: 'right',
     },
     {
       year: '2022',
-      title: 'AI-First Video Interview Platform',
-      description: 'Developed our first custom AI solution for video interviews and Hiring automation',
+      title: t('aboutPage.ourJourney.milestones.2022.title'),
+      description: t('aboutPage.ourJourney.milestones.2022.description'),
       side: 'left',
     },
     {
       year: '2023',
-      title: 'First AI Chatbot with RAG and LLM',
-      description: 'Built our first AI chatbot with RAG and LLM with Pharma and Avatar AI for Customer Support',
+      title: t('aboutPage.ourJourney.milestones.2023a.title'),
+      description: t('aboutPage.ourJourney.milestones.2023a.description'),
       side: 'right',
     },
     {
       year: '2023',
-      title: 'Enterprise Growth',
-      description: 'Expanded into industries such as Insurance and focused on accuracy, scale and security',
+      title: t('aboutPage.ourJourney.milestones.2023b.title'),
+      description: t('aboutPage.ourJourney.milestones.2023b.description'),
       side: 'left',
     },
     {
       year: '2025',
-      title: 'Voice Agents and Workflow Automation',
-      description: 'Developed voice agents and workflow automation for E-Commerce and Healthcare',
+      title: t('aboutPage.ourJourney.milestones.2025.title'),
+      description: t('aboutPage.ourJourney.milestones.2025.description'),
       side: 'right',
     },
     {
       year: '2026',
-      title: 'Full-funnel Customer Engagement',
-      description: 'Started building user-centric AI workflows for end-to-end sales and support operations',
+      title: t('aboutPage.ourJourney.milestones.2026.title'),
+      description: t('aboutPage.ourJourney.milestones.2026.description'),
       side: 'left',
     },
   ];
@@ -44,7 +46,7 @@ const OurJourney: React.FC = () => {
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12">
-          Our Journey So Far
+          {t('aboutPage.ourJourney.title')}
         </h2>
 
         <div className="max-w-4xl mx-auto">

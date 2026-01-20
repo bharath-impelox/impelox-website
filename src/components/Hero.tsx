@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-[#F6F8F9] py-20 px-6">
       <div className="container mx-auto">
@@ -11,17 +13,24 @@ const Hero: React.FC = () => {
             <div className="space-y-6">
               {/* Next icon at top */}
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-                <span className='flex items-center'>
-                  <span>AI Agents </span><img 
-                  src="/images/hero-visual.png" 
-                  alt="Next Icon" 
-                  className="w-13 h-13 transform rotate-6"
-                /> for</span> 
-        
-                Regulated Industries
+                {t('hero.titleFor') ? (
+                  <>
+                    <span className='flex items-center'>
+                      <span>{t('hero.title')} </span><img 
+                      src="/images/hero-visual.png" 
+                      alt="Next Icon" 
+                      className="w-13 h-13 transform rotate-6"
+                    /> {t('hero.titleFor')}</span> 
+                    {t('hero.titleRegulated')}
+                  </>
+                ) : (
+                  <>
+                    {t('hero.title')} {t('hero.titleRegulated')}
+                  </>
+                )}
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                Impelox provides AI agents for compliance, security, and scalability in industries like healthcare, finance, and government.
+                {t('hero.description')}
               </p>
               
               {/* CTA Buttons */}
@@ -33,10 +42,10 @@ const Hero: React.FC = () => {
                     background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                   }}
                 >
-                  Explore Our Products
+                  {t('hero.exploreProducts')}
                 </Link>
                 <button className=" bg-white shadow px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium text-base border border-transparent hover:border-blue-100">
-                 Talk to Our Team
+                 {t('hero.talkToTeam')}
                 </button>
               </div>
             </div>
@@ -49,7 +58,7 @@ const Hero: React.FC = () => {
                 <img src="/images/avatar-3.png" alt="User avatar" className="w-10 h-10 rounded-full border-2 border-white object-cover" />
                 <img src="/images/avatar-4.png" alt="User avatar" className="w-10 h-10 rounded-full border-2 border-white object-cover" />
               </div>
-              <span className="text-gray-600">| 50K+ Happy Users</span>
+              <span className="text-gray-600">| {t('hero.happyUsers')}</span>
             </div>
           </div>
 
@@ -73,7 +82,7 @@ const Hero: React.FC = () => {
                 
                 {/* Floating card with chart */}
                 <div className="absolute left-8 top-20 bg-white rounded-lg shadow-xl p-4 transform translate-x-[-60%] translate-y-[-10%] z-10">
-                  <div className="text-sm font-thin  text-gray-500 mb-3">10x Productivity</div>
+                  <div className="text-sm font-thin  text-gray-500 mb-3">{t('hero.productivity')}</div>
                   {/* Bar Chart */}
                   <div className="flex items-end justify-center gap-1.5 h-16">
                     <div className="w-4 bg-[#1B44FE] opacity-80 rounded-t" style={{ height: '40%' }}></div>

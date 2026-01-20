@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const MeetFounders: React.FC = () => {
+  const { t } = useTranslation();
   const founders = [
     {
       name: 'Brandon Stevenson',
@@ -31,10 +33,10 @@ const MeetFounders: React.FC = () => {
           {/* Left - Content */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Meet our Founders
+              {t('aboutPage.meetFounders.title')}
             </h2>
             <p className="text-lg text-gray-600">
-              Our team is a passionate team of data experts, product innovators.
+              {t('aboutPage.meetFounders.description')}
             </p>
             <button
               className="text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium"
@@ -42,7 +44,7 @@ const MeetFounders: React.FC = () => {
                 background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
               }}
             >
-              Contact us →
+              {t('aboutPage.meetFounders.contactUs')} →
             </button>
           </div>
 

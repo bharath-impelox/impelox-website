@@ -1,22 +1,24 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const NotSurePath: React.FC = () => {
+  const { t } = useTranslation();
   const options = [
     {
-      title: 'Product',
+      title: t('servicesPage.notSurePath.product.title'),
       items: [
-        'Standard workflows',
-        'Predictable pricing',
-        'Quick start',
+        t('servicesPage.notSurePath.product.items.standardWorkflows'),
+        t('servicesPage.notSurePath.product.items.predictablePricing'),
+        t('servicesPage.notSurePath.product.items.quickStart'),
       ],
     },
     {
-      title: 'Service',
+      title: t('servicesPage.notSurePath.service.title'),
       items: [
-        'Unique workflows',
-        'Legacy integrations',
-        'Tight deadlines',
-        'Capabilities beyond current products',
+        t('servicesPage.notSurePath.service.items.uniqueWorkflows'),
+        t('servicesPage.notSurePath.service.items.legacyIntegrations'),
+        t('servicesPage.notSurePath.service.items.tightDeadlines'),
+        t('servicesPage.notSurePath.service.items.capabilitiesBeyond'),
       ],
     },
   ];
@@ -33,10 +35,10 @@ const NotSurePath: React.FC = () => {
         >
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Not sure with path is right?
+              {t('servicesPage.notSurePath.title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Multi-location clinic losing revenue to no-shows, drowning in phone calls, missing after-hours bookings.
+              {t('servicesPage.notSurePath.description')}
             </p>
           </div>
 

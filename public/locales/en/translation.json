@@ -1,0 +1,696 @@
+{
+  "header": {
+    "about": "About",
+    "products": "Products",
+    "careers": "Careers",
+    "services": "Services",
+    "blog": "Blog",
+    "contactUs": "Contact Us"
+  },
+  "hero": {
+    "subtitle": "On the path to 5 Years of Innovation",
+    "title": "AI Agents",
+    "titleFor": "for",
+    "titleRegulated": "Regulated Industries",
+    "description": "Impelox builds intelligent systems that automate customer operations for healthcare, hospitality, sales, and insurance — 24/7, across every channel.",
+    "exploreProducts": "Explore Our Products",
+    "talkToTeam": "Talk to Our Team",
+    "productivity": "10x Productivity",
+    "happyUsers": "50K+ Happy Users"
+  },
+  "partnerLogos": {
+    "title": "Powering AI agents at"
+  },
+  "nextAction": {
+    "tag": "FLAGSHIP PRODUCT",
+    "title": "Next Action (Na2)",
+    "description": "A multi-agent AI platform that handles bookings, follow-ups, and customer communication — so your team can focus on what humans do best.",
+    "exploreNa2": "Explore Na2"
+  },
+  "regulatedIndustries": {
+    "tag": "INDUSTRIES",
+    "title": "Built for Regulated",
+    "titleHighlight": "Industries",
+    "description": "We specialize in industries where compliance matters and errors aren't an option.",
+    "healthcare": "Healthcare",
+    "hospitality": "Hospitality",
+    "sales": "Sales",
+    "insurance": "Insurance",
+    "seeSolutions": "See Industry Solutions"
+  },
+  "na2InAction": {
+    "tag": "METRICS",
+    "title": "Na2 in action",
+    "fewerNoShows": "fewer no-shows",
+    "lessPhoneTime": "less staff phone time",
+    "afterHoursBookings": "after-hours bookings captured",
+    "testimonial": "\"Na2 handles calls that would have gone to voicemail. Patients get scheduled. We get paid.\"",
+    "testimonialAuthor": "Operations Director, US Chiropractic Network"
+  },
+  "productSuite": {
+    "tag": "OTHER PRODUCTS",
+    "title": "The",
+    "titleHighlight": "Impelox",
+    "titleSuffix": "Product Suite",
+    "description": "Na2 is powerful alone. Even better with our integrated tools.",
+    "crm": {
+      "title": "CRM",
+      "description": "Customer data that updates and acts on itself."
+    },
+    "projectManagement": {
+      "title": "Project Management",
+      "description": "Tasks that move forward — even when people forget."
+    },
+    "contactForm": {
+      "title": "Contact Form",
+      "description": "Keep tabs on all your regular payments and set them up to run automatically, all in one spot!"
+    },
+    "calendar": {
+      "title": "Calendar",
+      "description": "Download detailed financial reports and statements anytime for easy record-keeping."
+    },
+    "pricingBilling": {
+      "title": "Pricing & Billing",
+      "description": "Easily manage shared accounts with family or team members with customizable access levels."
+    },
+    "exploreAll": "Explore All Products"
+  },
+  "customAI": {
+    "tag": "YOUR PARTNER IN AI",
+    "title": "Custom AI Development",
+    "description": "When off-the-shelf isn't enough, we build it for you.",
+    "chatbotRAG": {
+      "title": "Chatbot with RAG",
+      "subtitle": "Intelligent conversations powered by your data"
+    },
+    "bespokeAgent": {
+      "title": "Bespoke Agent Development",
+      "subtitle": "Custom AI agents for your specific workflow",
+      "exploreServices": "Explore Services"
+    },
+    "workflowAutomation": {
+      "title": "Workflow Automation",
+      "subtitle": "Automation that understands context",
+      "exploreServices": "Explore Services"
+    },
+    "aiSaaS": {
+      "title": "AI SaaS Implementation",
+      "subtitle": "We make your AI tools actually work"
+    }
+  },
+  "testimonials": {
+    "tag": "TESTIMONIALS",
+    "title": "What Our Partners Say",
+    "description": "When off-the-shelf isn't enough, we build it for you.",
+    "testimonial1": {
+      "quote": "\"Venkatesh is extremely professional and the best team to work with. Don't think twice. They deliver exactly what they promise.\".",
+      "name": "Founder",
+      "company": "AI Solutions Company, UAE"
+    },
+    "testimonial2": {
+      "quote": "\"I am extremely proud of what we built together. The Impelox team built it — I only guided. Today, Aura's platform is one of the best. When a group of people get together, we can move mountains.\"",
+      "name": "Business Head",
+      "company": "InsureTech Company, UAE"
+    },
+    "testimonial3": {
+      "quote": "Implementation was smooth and the results exceeded our expectations.",
+      "name": "Emily Rodriguez",
+      "company": "Government Agency"
+    },
+    "testimonial4": {
+      "quote": "Outstanding support and innovative solutions. Impelox is the future of AI.",
+      "name": "David Thompson",
+      "company": "Hospitality Inc"
+    }
+  },
+  "whyImpelox": {
+    "tag": "WHY US",
+    "title": "Why Impelox",
+    "regulatedExpertise": {
+      "title": "Regulated Industry Expertise",
+      "description": "HIPAA, SOC 2, ISO27001, GDPR-aware architecture."
+    },
+    "japanExperience": {
+      "title": "Japan Market Experience",
+      "description": "Kansai region experience. Native Japanese support."
+    },
+    "engineers": {
+      "title": "20+ Engineers",
+      "description": "Full team in Chennai. Production-grade systems."
+    },
+    "stayUntilWorks": {
+      "title": "We Stay Until It Works",
+      "description": "Implementation, integration, and support included."
+    },
+    "aboutUs": "About Us"
+  },
+  "ctaBanner": {
+    "title": "Ready to Automate Your Customer Operations?",
+    "description": "Book a consultation. We'll help you find the right solution — product or custom.",
+    "scheduleDemo": "Schedule a Demo",
+    "contactUs": "Contact Us",
+    "available": "Available in English and Japanese."
+  },
+  "footer": {
+    "product": "Product",
+    "na2Platform": "Na2 Platform",
+    "crm": "CRM",
+    "projectManagement": "Project Management",
+    "contactForm": "Contact Form",
+    "calendar": "Calendar",
+    "pricingBilling": "Pricing & Billing",
+    "industries": "Industries",
+    "healthcare": "Healthcare",
+    "hospitality": "Hospitality",
+    "sales": "Sales",
+    "insurance": "Insurance",
+    "bespokeAgentDevelopment": "Bespoke Agent Development",
+    "chatbotRAG": "Chatbot with RAG",
+    "workflowAutomation": "Workflow Automation",
+    "aiSaaSImplementation": "AI SaaS Implementation",
+    "company": "Company",
+    "aboutImpelox": "About Impelox",
+    "careers": "Careers",
+    "blog": "Blog",
+    "contact": "Contact",
+    "copyright": "© 2026 Impelox Technologies. All rights reserved. Chennai, India",
+    "connect": "Connect:",
+    "scheduleCall": "Schedule a Call"
+  },
+  "productsPage": {
+    "hero": {
+      "aiBrain": "The AI Brain",
+      "productSuite": "The Impelox Product Suite",
+      "title": "Business tools that execute themselves",
+      "description": "Five products that work great standalone. Connect to Na2 and they become fully autonomous.",
+      "exploreNa2": "Explore Na2 — The AI Brain",
+      "seeAllProducts": "See All Products Below"
+    },
+    "autonomy": {
+      "withNa2": "With Na2",
+      "standalone": "Standalone",
+      "title": "Now fully autonomous",
+      "description": "Great alone. Unstoppable together.",
+      "subtitle": "24/7 performance across your entire workflow."
+    },
+    "productDetail": {
+      "tag": "Reimagined for AI Execution",
+      "withNa2": "With Na2:",
+      "standalone": "Standalone:",
+      "learnMore": "Learn more",
+      "crm": {
+        "title": "CRM",
+        "description": "Centralizes customer data, tracks lifecycle stages, records every interaction.",
+        "withNa2": "Auto-updates, auto-follow-ups — leads that go cold get re-engaged automatically",
+        "standalone": "Track customers manually"
+      },
+      "projectManagement": {
+        "title": "Project Management",
+        "description": "Organize tasks, track progress, manage deadlines across teams.",
+        "withNa2": "Tasks move forward automatically, deadlines are tracked and escalated",
+        "standalone": "Manual task tracking and updates"
+      },
+      "contactForm": {
+        "title": "Contact Form",
+        "description": "Capture inquiries, collect information, route to the right team.",
+        "withNa2": "Automatically routes and responds to inquiries instantly",
+        "standalone": "Manual form processing and routing"
+      },
+      "calendar": {
+        "title": "Calendar",
+        "description": "Schedule meetings, manage availability, send reminders.",
+        "withNa2": "Auto-schedules, prevents conflicts, sends smart reminders",
+        "standalone": "Manual scheduling and reminders"
+      },
+      "pricingBilling": {
+        "title": "Pricing & Billing",
+        "description": "Generate quotes, process payments, manage subscriptions.",
+        "withNa2": "Auto-generates quotes, processes payments, follows up on invoices",
+        "standalone": "Manual quote generation and payment tracking"
+      }
+    },
+    "howItWorks": {
+      "tag": "HOW IT WORKS TOGETHER",
+      "title": "From first contact to payment - fully automated",
+      "steps": {
+        "contactCaptures": "Contact form captures inquiry",
+        "crmCreates": "CRM creates lead automatically",
+        "na2Engages": "Na2 engages instantly",
+        "calendarBooks": "Calendar books the meeting",
+        "pmTracks": "PM tracks follow-ups",
+        "pricingSends": "Pricing and billing sends quote",
+        "na2Follows": "Na2 follows up until paid"
+      },
+      "connectsWith": "Connects with"
+    },
+    "cta": {
+      "tag": "GET STARTED",
+      "title": "Ready to see the products in action?",
+      "description": "Start with one product or deploy the full suite. We'll help you find the right configuration.",
+      "scheduleDemo": "Schedule a Demo",
+      "talkToSales": "Talk to Sales",
+      "available": "Free consultation. Available in English and Japanese."
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "Empowering Businesses to Go AI-First",
+      "description": "We are driven by a passion for designing and deploying smart AI agents and automation systems that reduce repetitive work, make decisions based on data, and create better customer experiences.",
+      "vision": {
+        "tag": "OUR VISION",
+        "text": "To build a future where technology works quietly in the background, removing friction from everyday business operations without manual effort."
+      },
+      "mission": {
+        "tag": "OUR MISSION",
+        "text": "To empower businesses to run on AI agents by placing them at the center of their principal workflows, decisions, and customer interactions."
+      }
+    },
+    "growthMetrics": {
+      "tag": "OUR STATISTICS",
+      "title": "See our growth",
+      "oneMillion": "1M",
+      "supportPlatformUsers": "Support for Platform Users",
+      "supportPlatformUsersLine1": "Support for Platform",
+      "supportPlatformUsersLine2": "Users",
+      "revenueGeneratingLine1": "Revenue-Generating",
+      "revenueGeneratingLine2": "Transactions",
+      "fiveHundredK": "500k+",
+      "revenueGenerating": "Revenue-Generating Transactions",
+      "three": "3",
+      "globalMarket": "Global Market",
+      "countries": "India, USA, and Japan"
+    },
+    "coreValues": {
+      "title": "Our core values",
+      "contextualIntelligence": {
+        "title": "Contextual Intelligence",
+        "description": "AI without context produces limited outcomes. True intelligence comes from understanding intent, history, and real-world conditions, enabling systems to respond accurately and act with relevance across every scenario."
+      },
+      "scalableSecure": {
+        "title": "Scalable & Secure",
+        "description": "Reliable systems must grow with the business while remaining reliable and protected. Our platforms are designed to scale across teams and use cases, with security built in from the foundation to meet enterprise expectations."
+      },
+      "customerCentric": {
+        "title": "Customer-Centric",
+        "description": "Technology should adapt to the business, not the other way around. Every solution is designed around specific operational needs, ensuring measurable value, smoother adoption, and long-term alignment with customer goals."
+      }
+    },
+    "ourJourney": {
+      "title": "Our Journey So Far",
+      "milestones": {
+        "2021": {
+          "title": "Company Founded",
+          "description": "Started our journey in Contextual Intelligence and SaaS"
+        },
+        "2022": {
+          "title": "AI-First Video Interview Platform",
+          "description": "Developed our first custom AI solution for video interviews and Hiring automation"
+        },
+        "2023a": {
+          "title": "First AI Chatbot with RAG and LLM",
+          "description": "Built our first AI chatbot with RAG and LLM with Pharma and Avatar AI for Customer Support"
+        },
+        "2023b": {
+          "title": "Enterprise Growth",
+          "description": "Expanded into industries such as Insurance and focused on accuracy, scale and security"
+        },
+        "2025": {
+          "title": "Voice Agents and Workflow Automation",
+          "description": "Developed voice agents and workflow automation for E-Commerce and Healthcare"
+        },
+        "2026": {
+          "title": "Full-funnel Customer Engagement",
+          "description": "Started building user-centric AI workflows for end-to-end sales and support operations"
+        }
+      }
+    },
+    "meetFounders": {
+      "title": "Meet our Founders",
+      "description": "Behind Impelox is a passionate team of sales experts, product innovators.",
+      "contactUs": "Contact us"
+    },
+    "aboutCTA": {
+      "tag": "GET STARTED",
+      "title": "Ready to Become an AI-First Company?",
+      "description": "Move from isolated AI concepts to production-ready systems that automate real workflows and deliver measurable outcomes.",
+      "button": "Get started today"
+    },
+    "aiDeployment": {
+      "title": "Let's Deploy AI Tailored for Your Use Case",
+      "description": "80% of your requirements can be streamlined with NA2 and our other sub-platforms. If your business demands systems designed around your exact needs, data, and constraints, we can deliver that.",
+      "noGeneric": "No generic workflows, no locked-in platforms.",
+      "features": {
+        "customAI": "Custom AI Agents Development",
+        "chatbotIntegration": "Chatbot Integration",
+        "machineLearning": "Machine Learning Solutions",
+        "businessProcess": "Business Process Automation",
+        "startupSaaS": "Startup SaaS Development",
+        "aiFirst": "AI-First Transformation"
+      }
+    },
+    "contactForm": {
+      "title": "Contact us",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "sendMessage": "Send Message"
+    },
+    "trustedBrands": {
+      "title": "Trusted by top-tier brands"
+    }
+  },
+  "careersPage": {
+    "hero": {
+      "title": "Build Work That Matters. Grow With the Team.",
+      "description": "We're a growing team that values thoughtful execution, clear ownership, and continuous learning. If you're excited about working in the AI industry, collaborating with smart people, and growing alongside a company, you'll fit right in."
+    },
+    "ourCulture": {
+      "title": "Our culture",
+      "items": {
+        "workGetsDone": {
+          "title": "We Care About How Work Gets Done",
+          "description": "We believe great outcomes come from strong fundamentals—clear thinking, good communication, and respect for each other's time and effort. We move with purpose, and focus on doing the work."
+        },
+        "ownership": {
+          "title": "Ownership Over Control",
+          "description": "People at Impelox are trusted to own their work. We value initiative, accountability, and decision-making at every level. You're encouraged to speak up, take responsibility, and help shape how we grow."
+        },
+        "collaboration": {
+          "title": "Collaboration Is the Default",
+          "description": "We work closely across teams. Engineers talk to customers. Product works with business teams. Ideas are shared openly, and feedback is part of how we improve—not something to avoid."
+        },
+        "learning": {
+          "title": "Learning Through Doing",
+          "description": "You don't need to know everything on day one. We believe in learning through doing, asking questions, and improving continuously. Growth here is practical and hands-on."
+        }
+      }
+    },
+    "ourValues": {
+      "tag": "OUR VALUES",
+      "title": "From inquiry to resolution",
+      "values": {
+        "clarity": {
+          "title": "Clarity Over Complexity",
+          "description": "We value clear thinking and simple solutions. If something can be explained simply, it usually works better."
+        },
+        "respect": {
+          "title": "Respect for People & Time",
+          "description": "We work with empathy and professionalism. Everyone's contribution matters."
+        },
+        "longTerm": {
+          "title": "Build for the Long Term",
+          "description": "We focus on quality, sustainability, and decisions that make sense beyond short-term wins."
+        }
+      },
+      "lifeAtImpelox": {
+        "tag": "LIFE AT IMPELOX",
+        "description": "We move fast when needed, slow down when it matters, and always aim to improve.",
+        "items": {
+          "youngTeams": "Young Teams With Real Responsibility",
+          "directExposure": "Direct Exposure To Customers And Real Problems",
+          "openDiscussions": "Open Discussions And Honest Feedback",
+          "spaceToGrow": "Space To Grow, Experiment, And Take On New Challenges"
+        }
+      }
+    },
+    "cta": {
+      "tag": "JOIN US",
+      "title": "Build Your Career Here!",
+      "description": "If you're looking for meaningful work, supportive teammates, and a culture that values your professional growth, we'd love to hear from you.",
+      "button": "Send your CV"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "When Off-the-Shelf Isn't Enough",
+      "description": "Our products solve most problems. But sometimes you need something built specifically for your business.",
+      "discussProject": "Discuss Your Project",
+      "seeProducts": "See Our Products First"
+    },
+    "whatWeBuild": {
+      "tag": "OVERVIEW",
+      "title": "What we build",
+      "bespokeAgent": {
+        "title": "Bespoke Agent Development",
+        "description": "Custom AI agents tailored to your exact workflow — unique approval processes, specialized interactions, industry-specific tasks. We design, build, integrate, and optimize."
+      },
+      "chatbotRAG": {
+        "title": "Chatbot with RAG",
+        "description": "Chatbots that understand your business. Answers questions accurately by pulling from your documentation and internal data. Deploy across web, LINE, or WhatsApp."
+      },
+      "workflowAutomation": {
+        "title": "Contextually Intelligent Workflow Automation",
+        "description": "Automation that understands context — adapting to exceptions and handling complexity that rule-based systems can't."
+      },
+      "aiSaaS": {
+        "title": "AI SaaS Implementation",
+        "description": "Struggling to get value from AI tools you've bought? We implement, configure, and integrate them into your actual workflows."
+      }
+    },
+    "whatWeveBuilt": {
+      "tag": "CASE STUDY",
+      "title": "What we've build",
+      "description": "Deep domain expertise. AI-accelerated execution. Production-ready from day one.",
+      "insuranceTech": {
+        "tag": "Insurance Technology",
+        "category": "INSURANCE PLATFORM",
+        "title": "From Zero to 25% Market Share",
+        "description": "A health insurance tech founder came to us the night before their investor meeting. They had a vision but no product — just an idea and 12 hours to make it real.",
+        "learnMore": "Learn more"
+      },
+      "customerSupport": {
+        "tag": "Customer Support AI",
+        "category": "3D AVATAR AGENTS",
+        "title": "From Document Chatbot to AI Avatar Platform",
+        "description": "A chatbot that can read and answer documents. They envisioned something more human, more engaging. We transformed it into a complete AI avatar platform.",
+        "learnMore": "Learn more"
+      }
+    },
+    "notSurePath": {
+      "title": "Not sure with path is right?",
+      "description": "Multi-location clinic losing revenue to no-shows, drowning in phone calls, missing after-hours bookings.",
+      "product": {
+        "title": "Product",
+        "items": {
+          "standardWorkflows": "Standard workflows",
+          "predictablePricing": "Predictable pricing",
+          "quickStart": "Quick start"
+        }
+      },
+      "service": {
+        "title": "Service",
+        "items": {
+          "uniqueWorkflows": "Unique workflows",
+          "legacyIntegrations": "Legacy integrations",
+          "tightDeadlines": "Tight deadlines",
+          "capabilitiesBeyond": "Capabilities beyond current products"
+        }
+      }
+    },
+    "engagementProcess": {
+      "tag": "HOW WE WORK",
+      "title": "Our Engagement Process"
+    },
+    "whyWorkWithUs": {
+      "tag": "WHY US",
+      "title": "Why Work With Us",
+      "regulatedExpertise": {
+        "title": "Regulated Industry Expertise",
+        "description": "Healthcare, insurance, fintech. We understand compliance constraints."
+      },
+      "engineers": {
+        "title": "20+ Engineers",
+        "description": "Full team in Chennai. Enterprise-quality systems built to scale."
+      },
+      "moveFast": {
+        "title": "We Move Fast",
+        "description": "We've built production platforms overnight when deadlines demanded it."
+      },
+      "stayUntilWorks": {
+        "title": "We Stay Until It Works",
+        "description": "No documentation handoffs. We implement, test, iterate until you see results."
+      }
+    },
+    "cta": {
+      "tag": "CONNECT",
+      "title": "Have a Project in Mind?",
+      "description": "Tell us what you're trying to solve. We'll let you know if products or services are the right path.",
+      "scheduleConsultation": "Schedule a Consultation",
+      "emailDirectly": "Email Us Directly",
+      "available": "Free consultation. No obligation. English and Japanese."
+    }
+  },
+  "productNa2Page": {
+    "hero": {
+      "badge": "A Human Bot That Never Sleeps",
+      "title": "Na2 the AI that runs your operations",
+      "description": "A multi-agent platform that automates bookings, follow-ups, and customer communication — 24/7, across every channel.",
+      "seeInAction": "See Na2 In Action",
+      "talkToTeam": "Talk To Our Team"
+    },
+    "meetAgents": {
+      "tag": "PRODUCTS",
+      "title": "Meet the Agents",
+      "description": "Each agent is a specialist. Together, they run your entire customer operation.",
+      "agents": {
+        "booking": {
+          "name": "Booking Agent",
+          "description": "Schedules across multiple calendars"
+        },
+        "followUp": {
+          "name": "Follow-Up Agent",
+          "description": "Post-visit check-ins and rebooking"
+        },
+        "noShow": {
+          "name": "No-Show Prevention Agent",
+          "description": "Smart reminders, at-risk intervention"
+        },
+        "leadResponse": {
+          "name": "Lead Response Agent",
+          "description": "Instant engagement, qualification"
+        },
+        "registration": {
+          "name": "Registration Agent",
+          "description": "Intake forms, data collection"
+        },
+        "verification": {
+          "name": "Verification Agent",
+          "description": "Insurance and eligibility confirmation"
+        },
+        "reminder": {
+          "name": "Reminder Agent",
+          "description": "Timely, channel-appropriate reminders"
+        },
+        "escalation": {
+          "name": "Escalation Agent",
+          "description": "Routes complex issues to humans"
+        }
+      },
+      "customAgent": "Need a custom agent?",
+      "customAgentDescription": "We build bespoke agents for specific workflows."
+    },
+    "preConfigured": {
+      "title": "Pre-Configured for your Industry",
+      "description": "Powerful automation tailored to the exact needs of your industry deployed in weeks, not months.",
+      "industries": {
+        "healthcare": {
+          "tag": "Healthcare",
+          "title": "Fill Every Empty Slot. Automatically.",
+          "features": {
+            "0": "Booking",
+            "1": "No-Show Prevention",
+            "2": "Follow-Up",
+            "3": "Registration",
+            "4": "Verification"
+          }
+        },
+        "hospitality": {
+          "tag": "Hospitality",
+          "title": "inbound bookings. no staff required.",
+          "features": {
+            "0": "Reservations",
+            "1": "Guest Communication",
+            "2": "Reviews",
+            "3": "Upsells"
+          }
+        },
+        "sales": {
+          "tag": "Sales",
+          "title": "Never Let A Deal Go Cold.",
+          "features": {
+            "0": "Lead Response",
+            "1": "Quotation",
+            "2": "Follow-Up",
+            "3": "Meeting Scheduling"
+          }
+        },
+        "insurance": {
+          "tag": "Insurance",
+          "title": "Client Relationships That Scale.",
+          "features": {
+            "0": "Renewals",
+            "1": "Claims Follow-Up",
+            "2": "Anniversaries",
+            "3": "Lead Qualification"
+          }
+        }
+      },
+      "demoPlaceholder": "Show Demo For Selected One Here"
+    },
+    "howItWorks": {
+      "tag": "HOW IT WORKS",
+      "title": "From inquiry to resolution",
+      "steps": {
+        "step1": {
+          "number": "1",
+          "title": "Customer Reaches Out",
+          "description": "Any channel"
+        },
+        "step2": {
+          "number": "2",
+          "title": "Intent Detected",
+          "description": "Na2 routes to the right agent"
+        },
+        "step3": {
+          "number": "3",
+          "title": "Agent Engages",
+          "description": "Task handled automatically"
+        },
+        "step4": {
+          "number": "4",
+          "title": "Action Executed",
+          "description": "Data synced to your systems"
+        },
+        "step5": {
+          "number": "5",
+          "title": "Escalation When Needed",
+          "description": "Humans get full context"
+        }
+      },
+      "connectsWith": "Connects with"
+    },
+    "caseStudy": {
+      "tag": "NA2 IN ACTION",
+      "caseStudyBadge": "Case study",
+      "automationBadge": "5 full agents and automation",
+      "title": "US Chiropractic Network",
+      "problem": "Multi-location clinic losing revenue to no-shows, drowning in phone calls, missing after-hours bookings.",
+      "results": "Results",
+      "metrics": {
+        "noShows": "No-shows",
+        "afterHours": "After-hours bookings",
+        "phoneTime": "Phone time",
+        "patientRating": "Patient rating"
+      },
+      "readFullCaseStudy": "Read Full Case Study"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Here's everything you need to know before getting started.",
+      "stillHaveQuestions": "Still have questions?",
+      "contactUs": "Contact Us",
+      "questions": {
+        "q1": "How is Na2 different from a chatbot?",
+        "q2": "Can Na2 make phone calls?",
+        "q3": "What languages?",
+        "q4": "Implementation time?",
+        "q5": "Is it secure?"
+      },
+      "answers": {
+        "a1": "Multi-agent platform executing complete workflows across all channels — not just Q&A."
+      }
+    },
+    "cta": {
+      "tag": "GET STARTED",
+      "title": "Ready to see Na2 in action?",
+      "description": "Pricing is based on your business size, channels, and agent configuration. Every engagement starts with a consultation to design the right setup for you.",
+      "scheduleDemo": "Schedule a Demo",
+      "contactUs": "Contact Us",
+      "available": "Free consultation. Available in English and Japanese."
+    }
+  }
+}
+

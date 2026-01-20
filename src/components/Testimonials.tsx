@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Testimonials: React.FC = () => {
+  const { t } = useTranslation();
   const testimonials = [
     {
-      quote: '"Venkatesh is extremely professional and the best team to work with. Don\'t think twice. They deliver exactly what they promise.".',
-      name: 'Founder',
-      company: 'AI Solutions Company, UAE',
+      quote: t('testimonials.testimonial1.quote'),
+      name: t('testimonials.testimonial1.name'),
+      company: t('testimonials.testimonial1.company'),
     },
     {
-      quote: '"I am extremely proud of what we built together. The Impelox team built it — I only guided. Today, Aura\'s platform is one of the best. When a group of people get together, we can move mountains."',
-      name: 'Business Head',
-      company: 'InsureTech Company, UAE',
+      quote: t('testimonials.testimonial2.quote'),
+      name: t('testimonials.testimonial2.name'),
+      company: t('testimonials.testimonial2.company'),
     },
     {
-      quote: 'Implementation was smooth and the results exceeded our expectations.',
-      name: 'Emily Rodriguez',
-      company: 'Government Agency',
+      quote: t('testimonials.testimonial3.quote'),
+      name: t('testimonials.testimonial3.name'),
+      company: t('testimonials.testimonial3.company'),
     },
     {
-      quote: 'Outstanding support and innovative solutions. Impelox is the future of AI.',
-      name: 'David Thompson',
-      company: 'Hospitality Inc',
+      quote: t('testimonials.testimonial4.quote'),
+      name: t('testimonials.testimonial4.name'),
+      company: t('testimonials.testimonial4.company'),
     },
   ];
 
@@ -38,12 +40,12 @@ const Testimonials: React.FC = () => {
     <section className="bg-white py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[#0040C1] text-sm mb-2">• TESTIMONIALS</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('testimonials.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            What Our Partners Say
+            {t('testimonials.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            When off-the-shelf isn't enough, we build it for you..
+            {t('testimonials.description')}
           </p>
         </div>
 

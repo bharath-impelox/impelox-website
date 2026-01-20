@@ -1,0 +1,696 @@
+{
+  "header": {
+    "about": "会社概要",
+    "products": "製品情報",
+    "careers": "採用情報",
+    "services": "サービス",
+    "blog": "ブログ",
+    "contactUs": "お問い合わせ"
+  },
+  "hero": {
+    "subtitle": "5年間のイノベーションへの歩み",
+    "title": "規制業界のための",
+    "titleFor": "",
+    "titleRegulated": "AIエージェント",
+    "description": "Impeloxは、医療・ホスピタリティ・営業・保険業界向けに、あらゆるチャネルで24時間365日、顧客対応業務を自動化するインテリジェントシステムを開発しています。",
+    "exploreProducts": "製品を見る",
+    "talkToTeam": "担当者に相談する",
+    "productivity": "生産性を10倍に",
+    "happyUsers": "利用ユーザー数 50,000人以上"
+  },
+  "partnerLogos": {
+    "title": "以下の企業でAIエージェントを導入しています。"
+  },
+  "nextAction": {
+    "tag": "主力製品",
+    "title": "Next Action (Na2)",
+    "description": "予約管理・フォローアップ・顧客コミュニケーションを担うマルチエージェント型AIプラットフォーム。人にしかできない仕事に、チームが集中できる環境を実現します。",
+    "exploreNa2": "Na2の詳細を見る"
+  },
+  "regulatedIndustries": {
+    "tag": "業界",
+    "title": "規制産業向けに設計",
+    "titleHighlight": "",
+    "description": "コンプライアンスが重要で、ミスが許されない業界に特化しています。",
+    "healthcare": "医療",
+    "hospitality": "ホスピタリティ",
+    "sales": "営業",
+    "insurance": "保険",
+    "seeSolutions": "業界別ソリューションを見る"
+  },
+  "na2InAction": {
+    "tag": "METRICS",
+    "title": "Na2 in action",
+    "fewerNoShows": "無断キャンセルを削減",
+    "lessPhoneTime": "スタッフの電話対応時間を削減",
+    "afterHoursBookings": "営業時間外の予約獲得を実現",
+    "testimonial": "Na2は、これまで留守番電話に回っていた電話を確実に対応してくれます。患者は予約でき、私たちは確実に売上につなげられています。",
+    "testimonialAuthor": "— 米国カイロプラクティック・ネットワーク, オペレーションディレクター"
+  },
+  "productSuite": {
+    "tag": "OTHER PRODUCTS",
+    "title": "Impelox",
+    "titleHighlight": "",
+    "titleSuffix": "製品ラインアップ",
+    "description": "Na2は単体でも強力です。統合されたツールと組み合わせることで、さらに高い効果を発揮します。",
+    "crm": {
+      "title": "CRM",
+      "description": "顧客データが自動更新され、次のアクションまで自動化。"
+    },
+    "projectManagement": {
+      "title": "プロジェクト管理",
+      "description": "対応漏れを防ぎ、タスクを自動で前進させます。"
+    },
+    "contactForm": {
+      "title": "お問い合わせフォーム",
+      "description": "すべての定期的な支払いを一元管理し、自動実行の設定までまとめて行えます。"
+    },
+    "calendar": {
+      "title": "カレンダー",
+      "description": "詳細な財務レポートや明細をいつでもダウンロードでき、記録管理を簡単に行えます。"
+    },
+    "pricingBilling": {
+      "title": "料金・請求管理",
+      "description": "アクセス権限をカスタマイズしながら、家族やチームメンバーと共有アカウントを簡単に管理できます。"
+    },
+    "exploreAll": "すべての製品を見る"
+  },
+  "customAI": {
+    "tag": "AIのパートナー",
+    "title": "カスタムAI開発",
+    "description": "既製品では対応できない場合も、最適なソリューションをゼロから構築します。",
+    "chatbotRAG": {
+      "title": "RAG対応チャットボット",
+      "subtitle": "あなたのデータを活用した、インテリジェントな対話。"
+    },
+    "bespokeAgent": {
+      "title": "オーダーメイドAIエージェント開発",
+      "subtitle": "お客様の業務フローに最適化したカスタムAIエージェント",
+      "exploreServices": "サービスを見る"
+    },
+    "workflowAutomation": {
+      "title": "ワークフロー自動化",
+      "subtitle": "文脈を理解する自動化",
+      "exploreServices": "サービスを見る"
+    },
+    "aiSaaS": {
+      "title": "AI SaaS 導入支援",
+      "subtitle": "AIツールを、実際に使える状態まで導きます"
+    }
+  },
+  "testimonials": {
+    "tag": "導入企業の声",
+    "title": "パートナー企業の声",
+    "description": "既製品では不十分な場合でも、私たちがカスタムで構築します。",
+    "testimonial1": {
+      "quote": "Venkateshは非常にプロフェッショナルで、一緒に仕事をするのに最高のチームです。迷う必要はありません。約束したことを確実に実現してくれます。",
+      "name": "創業者",
+      "company": "UAE（アラブ首長国連邦）AIソリューション企業"
+    },
+    "testimonial2": {
+      "quote": "私たちが一緒に築き上げたものを、心から誇りに思っています。実際に構築したのはImpeloxチームで、私は導いただけです。現在、Auraのプラットフォームは最高レベルの一つに成長しました。人が力を合わせれば、不可能だと思えることも成し遂げられます。",
+      "name": "事業責任者",
+      "company": "UAE（アラブ首長国連邦）のインシュアテック企業"
+    },
+    "testimonial3": {
+      "quote": "実装はスムーズで、結果は期待を上回りました。",
+      "name": "Emily Rodriguez",
+      "company": "政府機関"
+    },
+    "testimonial4": {
+      "quote": "優れたサポートと革新的なソリューション。ImpeloxはAIの未来です。",
+      "name": "David Thompson",
+      "company": "ホスピタリティ Inc"
+    }
+  },
+  "whyImpelox": {
+    "tag": "選ばれる理由",
+    "title": "なぜImpeloxなのか",
+    "regulatedExpertise": {
+      "title": "規制産業における専門性",
+      "description": "HIPAA、SOC 2、ISO 27001、GDPRに対応したアーキテクチャ設計。"
+    },
+    "japanExperience": {
+      "title": "日本市場での実績",
+      "description": "関西エリアでの導入実績。日本語ネイティブによるサポート体制。"
+    },
+    "engineers": {
+      "title": "20名以上のエンジニア体制",
+      "description": "チェンナイにフルチームを擁し、本番環境に耐えうるプロダクション品質のシステムを構築しています。"
+    },
+    "stayUntilWorks": {
+      "title": "成果が出るまで伴走",
+      "description": "実装・システム統合・運用サポートまで一貫して対応します。"
+    },
+    "aboutUs": "会社情報"
+  },
+  "ctaBanner": {
+    "title": "顧客業務の自動化を始めませんか？",
+    "description": "無料相談をご予約ください。製品導入からカスタム開発まで、最適なソリューションをご提案します。",
+    "scheduleDemo": "デモを予約する",
+    "contactUs": "お問い合わせ",
+    "available": "英語・日本語対応"
+  },
+  "footer": {
+    "product": "製品",
+    "na2Platform": "Na2 プラットフォーム",
+    "crm": "CRM（顧客管理）",
+    "projectManagement": "プロジェクト管理",
+    "contactForm": "お問い合わせフォーム",
+    "calendar": "カレンダー",
+    "pricingBilling": "料金・請求管理",
+    "industries": "業界",
+    "healthcare": "医療",
+    "hospitality": "ホスピタリティ",
+    "sales": "営業",
+    "insurance": "保険",
+    "bespokeAgentDevelopment": "オーダーメイドAIエージェント開発",
+    "chatbotRAG": "RAG対応チャットボット",
+    "workflowAutomation": "ワークフロー自動化",
+    "aiSaaSImplementation": "AI SaaS 導入支援",
+    "company": "会社情報",
+    "aboutImpelox": "Impeloxについて",
+    "careers": "採用情報",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "copyright": "© 2026 Impelox Technologies. All rights reserved. Chennai, India",
+    "connect": "お問い合わせ：",
+    "scheduleCall": "通話予約"
+  },
+  "productsPage": {
+    "hero": {
+      "aiBrain": "AIの中枢",
+      "productSuite": "Impelox プロダクトスイート",
+      "title": "自律的に実行されるビジネスツール",
+      "description": "単体でも高いパフォーマンスを発揮する5つのプロダクト。Na2と連携することで、完全自律型のAIシステムへと進化します。",
+      "exploreNa2": "Na2を詳しく見るーAIの中枢",
+      "seeAllProducts": "すべてのプロダクトを見る"
+    },
+    "autonomy": {
+      "withNa2": "Na2と連携",
+      "standalone": "単体利用",
+      "title": "いま、完全自律へ",
+      "description": "単体でも優秀。連携すればさらに強力。",
+      "subtitle": "業務全体を24時間365日フル稼働。"
+    },
+    "productDetail": {
+      "tag": "AI実行に最適化された設計",
+      "withNa2": "Na2連携時：",
+      "standalone": "単体利用：",
+      "learnMore": "詳細を見る",
+      "crm": {
+        "title": "CRM",
+        "description": "顧客データを一元管理し、ライフサイクルを追跡。すべてのやり取りを記録します。",
+        "withNa2": "自動更新・自動フォローアップにより、離脱したリードも自動的に再アプローチされます。",
+        "standalone": "顧客管理を手動で実施"
+      },
+      "projectManagement": {
+        "title": "プロジェクト管理",
+        "description": "タスクを整理し、進捗を追跡し、チーム全体の期限を管理します。",
+        "withNa2": "タスクが自動で前進し、期限が追跡・エスカレートされます",
+        "standalone": "手動でのタスク追跡と更新"
+      },
+      "contactForm": {
+        "title": "お問い合わせフォーム",
+        "description": "問い合わせを取得し、情報を収集し、適切なチームに振り分けます。",
+        "withNa2": "問い合わせを自動で振り分け、即座に対応します",
+        "standalone": "手動でのフォーム処理と振り分け"
+      },
+      "calendar": {
+        "title": "カレンダー",
+        "description": "会議をスケジュールし、空き状況を管理し、リマインダーを送信します。",
+        "withNa2": "自動スケジュール、競合防止、スマートリマインダー送信",
+        "standalone": "手動でのスケジュール管理とリマインダー"
+      },
+      "pricingBilling": {
+        "title": "料金・請求管理",
+        "description": "見積書を生成し、支払いを処理し、サブスクリプションを管理します。",
+        "withNa2": "見積書を自動生成し、支払いを処理し、請求書をフォローアップします",
+        "standalone": "手動での見積書生成と支払い追跡"
+      }
+    },
+    "howItWorks": {
+      "tag": "プロダクト連携の仕組み",
+      "title": "最初の問い合わせから支払い完了までを完全自動化",
+      "steps": {
+        "contactCaptures": "お問い合わせフォームが問い合わせを取得",
+        "crmCreates": "CRMが自動でリードを作成",
+        "na2Engages": "Na2が即時対応",
+        "calendarBooks": "カレンダーで打ち合わせを自動予約",
+        "pmTracks": "プロジェクト管理でフォローアップを管理",
+        "pricingSends": "料金・請求管理が見積書を送付",
+        "na2Follows": "支払い完了までNa2がフォローアップ"
+      },
+      "connectsWith": "連携可能サービス"
+    },
+    "cta": {
+      "tag": "今すぐ始める",
+      "title": "実際のプロダクトを体験してみませんか？",
+      "description": "1つのプロダクトから始めることも、フルスイートで導入することも可能です。最適な構成選びを、私たちがサポートします。",
+      "scheduleDemo": "デモを予約する",
+      "talkToSales": "営業に相談する",
+      "available": "無料相談｜日本語・英語対応"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "企業の\"AIファースト\"化を支援する",
+      "description": "私たちは、反復作業を削減し、データに基づいた意思決定を可能にし、より優れた顧客体験を創出するスマートなAIエージェントおよび自動化システムの設計・導入に情熱を注いでいます。",
+      "vision": {
+        "tag": "私たちのビジョン",
+        "text": "テクノロジーが静かにバックグラウンドで機能し、日々の業務から手作業の負担や摩擦を取り除く未来を実現すること。"
+      },
+      "mission": {
+        "tag": "私たちのミッション",
+        "text": "AIエージェントを主要な業務フロー・意思決定・顧客対応の中心に据えることで、企業がAIを基盤とした運営を実現できるよう支援します。"
+      }
+    },
+    "growthMetrics": {
+      "tag": "統計データ",
+      "title": "成長の推移",
+      "oneMillion": "1M",
+      "supportPlatformUsers": "100万人以上の プラットフォームユーザーをサポート",
+      "supportPlatformUsersLine1": "100万人以上の",
+      "supportPlatformUsersLine2": "プラットフォームユーザーをサポート",
+      "fiveHundredK": "500k+",
+      "revenueGenerating": "50万件以上の収益発生トランザクション",
+      "revenueGeneratingLine1": "50万件以上の",
+      "revenueGeneratingLine2": "収益発生トランザクション",
+      "three": "3",
+      "globalMarket": "グローバル市場",
+      "countries": "インド・米国・日本"
+    },
+    "coreValues": {
+      "title": "私たちの価値観",
+      "contextualIntelligence": {
+        "title": "コンテキスト知能",
+        "description": "文脈を理解しないAIは、限られた成果しか生み出せません。真の知能とは、意図・履歴・現実世界の状況を理解することであり、あらゆるシーンにおいて正確かつ適切に対応・行動できるシステムを実現します。"
+      },
+      "scalableSecure": {
+        "title": "スケーラブルかつセキュア",
+        "description": "信頼できるシステムは、ビジネスの成長に合わせて拡張できると同時に、高い安全性を維持する必要があります。当社のプラットフォームは、チーム規模やユースケースの拡大に対応できるよう設計されており、基盤レベルからセキュリティを組み込むことで、エンタープライズ水準の要件を満たします。"
+      },
+      "customerCentric": {
+        "title": "顧客中心",
+        "description": "テクノロジーがビジネスに合わせるべきであり、その逆ではありません。すべてのソリューションは、具体的な業務ニーズを起点に設計され、測定可能な価値の創出、スムーズな導入、そしてお客様の目標との長期的な整合性を実現します。"
+      }
+    },
+    "ourJourney": {
+      "title": "これまでの歩み",
+      "milestones": {
+        "2021": {
+          "title": "会社設立",
+          "description": "コンテキスト知能およびSaaS分野での取り組みを開始。"
+        },
+        "2022": {
+          "title": "AIファーストのビデオ面接プラットフォーム",
+          "description": "ビデオ面接および採用自動化向けの初のカスタムAIソリューションを開発。"
+        },
+        "2023a": {
+          "title": "RAGおよびLLMを活用した初のAIチャットボット",
+          "description": "製薬業界向けに、アバターAIを活用したカスタマーサポート用のRAG×LLM AIチャットボットを初めて構築。"
+        },
+        "2023b": {
+          "title": "エンタープライズ成長フェーズ",
+          "description": "保険業界などの分野へ事業を拡大し、精度・スケーラビリティ・セキュリティの強化に注力。"
+        },
+        "2025": {
+          "title": "音声エージェントおよびワークフロー自動化",
+          "description": "ECおよびヘルスケア分野向けに、音声エージェントとワークフロー自動化ソリューションを開発。"
+        },
+        "2026": {
+          "title": "顧客接点の全工程をカバーするエンゲージメント",
+          "description": "営業からサポートまでのエンドツーエンド業務を対象に、ユーザー中心設計のAIワークフロー構築を開始。"
+        }
+      }
+    },
+    "meetFounders": {
+      "title": "創業者紹介",
+      "description": "Impeloxの背後には、情熱あふれる営業のプロフェッショナルとプロダクトイノベーターからなるチームがいます。",
+      "contactUs": "お問い合わせ"
+    },
+    "aboutCTA": {
+      "tag": "今すぐ始める",
+      "title": "AIファースト企業への第一歩を踏み出しませんか？",
+      "description": "アイデア段階のAI活用から脱却し、実際の業務を自動化し、明確な成果を生み出す本番運用システムへと進化させましょう。",
+      "button": "今すぐ始める"
+    },
+    "aiDeployment": {
+      "title": "あなたのユースケースに最適化したAIを導入しませんか。",
+      "description": "要件の約80％は、NA2および当社の各サブプラットフォームで効率化が可能です。もし、より高度にカスタマイズされたシステムや、独自の要件・データ・制約条件に合わせた設計が必要な場合でも、最適なソリューションをご提供します。",
+      "noGeneric": "汎用ワークフローなし。特定プラットフォームへの縛りもありません。",
+      "features": {
+        "customAI": "カスタムAIエージェント開発",
+        "chatbotIntegration": "チャットボット統合",
+        "machineLearning": "機械学習ソリューション",
+        "businessProcess": "業務プロセス自動化",
+        "startupSaaS": "スタートアップ向けSaaS開発",
+        "aiFirst": "AIファースト変革支援"
+      }
+    },
+    "contactForm": {
+      "title": "お問い合わせ",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "メールアドレス",
+      "subject": "件名",
+      "message": "メッセージ",
+      "sendMessage": "送信する"
+    },
+    "trustedBrands": {
+      "title": "一流ブランドに信頼されています"
+    }
+  },
+  "careersPage": {
+    "hero": {
+      "title": "価値ある仕事をつくろう。チームとともに成長しよう。",
+      "description": "私たちは、丁寧な実行力、明確なオーナーシップ、そして継続的な学習を大切にする成長中のチームです。AI業界で働くことにワクワクし、優秀な仲間と協働しながら、会社とともに成長していきたい方であれば、きっとフィットする環境です。"
+    },
+    "ourCulture": {
+      "title": "私たちのカルチャー",
+      "items": {
+        "workGetsDone": {
+          "title": "仕事の「進め方」を大切にしています",
+          "description": "私たちは、優れた成果は、明確な思考、円滑なコミュニケーション、そしてお互いの時間と努力を尊重する姿勢といった、確かな基礎の上に成り立つと考えています。目的意識を持って行動し、本質的な仕事に集中することを大切にしています。"
+        },
+        "ownership": {
+          "title": "管理ではなく、オーナーシップを",
+          "description": "Impeloxでは、一人ひとりが自分の仕事に責任を持ち、主体的に取り組むことを信頼しています。私たちは、あらゆるレベルでの主体性・責任感・意思決定を大切にしています。意見を発信し、自ら責任を引き受け、会社の成長のあり方を一緒につくっていくことを歓迎します。"
+        },
+        "collaboration": {
+          "title": "コラボレーションを当たり前に",
+          "description": "私たちはチームの枠を越えて密に連携しています。エンジニアは顧客と対話し、プロダクトチームはビジネスチームと協働します。アイデアはオープンに共有され、フィードバックは改善のための大切なプロセスであり、避けるものではありません。"
+        },
+        "learning": {
+          "title": "実践を通じて学ぶ",
+          "description": "最初からすべてを知っている必要はありません。私たちは、実際に手を動かしながら学び、質問し、継続的に改善していく姿勢を大切にしています。ここでの成長は、実践的でハンズオンなものです。"
+        }
+      }
+    },
+    "ourValues": {
+      "tag": "私たちの価値観",
+      "title": "お問い合わせから解決まで",
+      "values": {
+        "clarity": {
+          "title": "複雑さより、明確さを",
+          "description": "私たちは、明確な思考とシンプルな解決策を大切にしています。物事がシンプルに説明できるほど、より良く機能することが多いと考えています。"
+        },
+        "respect": {
+          "title": "人と時間を大切にする",
+          "description": "私たちは、思いやりとプロフェッショナリズムをもって仕事に取り組みます。一人ひとりの貢献が重要であると考えています。"
+        },
+        "longTerm": {
+          "title": "長期的な価値を見据えてつくる",
+          "description": "私たちは、短期的な成果にとらわれるのではなく、品質・持続性・そして長期的に意味のある意思決定を重視しています。"
+        }
+      },
+      "lifeAtImpelox": {
+        "tag": "LIFE AT IMPELOX",
+        "description": "必要なときはスピーディーに、じっくり向き合うべきときは丁寧に。そして常に、より良くなることを目指しています。",
+        "items": {
+          "youngTeams": "若いチームでも、実際の責任ある仕事を任されます",
+          "directExposure": "顧客やリアルな課題に直接向き合える環境",
+          "openDiscussions": "オープンな議論と率直なフィードバック文化",
+          "spaceToGrow": "成長し、挑戦し、新しいことに取り組める余白"
+        }
+      }
+    },
+    "cta": {
+      "tag": "参加する",
+      "title": "ここでキャリアを築こう！",
+      "description": "意義のある仕事、支え合える仲間、そしてあなたの成長を大切にするカルチャーを求めているなら、ぜひご応募ください。",
+      "button": "履歴書を送る"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "既製品では足りないときに。",
+      "description": "私たちのプロダクトは多くの課題を解決できます。しかし、ビジネスに完全に最適化された仕組みが必要な場合もあります。",
+      "discussProject": "プロジェクトを相談する",
+      "seeProducts": "プロダクトを見る"
+    },
+    "whatWeBuild": {
+      "tag": "概要",
+      "title": "提供するソリューション",
+      "bespokeAgent": {
+        "title": "カスタムAIエージェント開発",
+        "description": "独自の承認フロー、専門的な業務対応、業界特化タスクなど、御社のワークフローに最適化したAIエージェントを設計・開発します。設計から構築、統合、最適化まで一貫して対応します。"
+      },
+      "chatbotRAG": {
+        "title": "RAG対応チャットボット",
+        "description": "社内ドキュメントや内部データを参照し、正確な回答を提供する業務理解型チャットボットです。Web、LINE、WhatsAppなど複数チャネルに展開できます。"
+      },
+      "workflowAutomation": {
+        "title": "コンテキスト理解型ワークフロー自動化",
+        "description": "状況を理解し、例外処理や複雑な業務にも柔軟に対応する自動化を実現します。ルールベースでは対応できない高度な処理にも対応可能です。"
+      },
+      "aiSaaS": {
+        "title": "AI SaaS 導入・活用支援",
+        "description": "導入したAIツールを十分に活用できていますか？実運用に合わせた設定・構成・統合まで支援します。"
+      }
+    },
+    "whatWeveBuilt": {
+      "tag": "導入事例",
+      "title": "私たちが構築してきた実績",
+      "description": "業界特化の深い知見と、AIによる高速開発。初日から本番運用可能な品質で提供します。",
+      "insuranceTech": {
+        "tag": "保険テクノロジー",
+        "category": "INSURANCE PLATFORM",
+        "title": "ゼロから市場シェア25%へ",
+        "description": "あるヘルス保険テック企業の創業者が、投資家ミーティング前夜に相談に来ました。構想はあるものの、プロダクトはなく、残された時間は12時間だけでした。",
+        "learnMore": "詳しく見る"
+      },
+      "customerSupport": {
+        "tag": "カスタマーサポートAI",
+        "category": "3D AVATAR AGENTS",
+        "title": "ドキュメント対応チャットボットからAIアバタープラットフォームへ",
+        "description": "ドキュメントを読み取り回答するチャットボットを、より人間らしく、よりエンゲージメントの高いAIアバタープラットフォームへ進化させました。",
+        "learnMore": "詳しく見る"
+      }
+    },
+    "notSurePath": {
+      "title": "どの選択が最適かわからない方へ",
+      "description": "複数拠点を展開するクリニックが、無断キャンセルや電話対応の増加、営業時間外予約の取りこぼしによって収益を失っているケースなど。",
+      "product": {
+        "title": "プロダクト",
+        "items": {
+          "standardWorkflows": "標準化された業務フロー",
+          "predictablePricing": "予測しやすい料金体系",
+          "quickStart": "短期間で導入可能"
+        }
+      },
+      "service": {
+        "title": "サービス",
+        "items": {
+          "uniqueWorkflows": "独自の業務フロー",
+          "legacyIntegrations": "レガシーシステムとの連携",
+          "tightDeadlines": "短納期案件",
+          "capabilitiesBeyond": "既存プロダクトの機能を超える要件"
+        }
+      }
+    },
+    "engagementProcess": {
+      "tag": "導入プロセス",
+      "title": "プロジェクト進行フロー"
+    },
+    "whyWorkWithUs": {
+      "tag": "選ばれる理由",
+      "title": "Impeloxが選ばれる理由",
+      "regulatedExpertise": {
+        "title": "規制業界における専門性",
+        "description": "医療・保険・フィンテックなど、厳しいコンプライアンス要件を理解しています。"
+      },
+      "engineers": {
+        "title": "20名以上のエンジニア体制",
+        "description": "チェンナイ拠点のフルチーム体制で、スケーラブルなエンタープライズ品質のシステムを構築します。"
+      },
+      "moveFast": {
+        "title": "スピード重視",
+        "description": "期限が迫る案件では、一晩で本番環境を構築した実績もあります。"
+      },
+      "stayUntilWorks": {
+        "title": "成果が出るまで伴走",
+        "description": "ドキュメントの引き渡しで終わりません。実装・検証・改善を繰り返し、成果が出るまで支援します。"
+      }
+    },
+    "cta": {
+      "tag": "お問い合わせ",
+      "title": "ご相談したいプロジェクトはありますか？",
+      "description": "解決したい課題をお聞かせください。最適な選択肢が「プロダクト」か「カスタム開発」かをご提案します。",
+      "scheduleConsultation": "無料相談を予約する",
+      "emailDirectly": "メールで問い合わせる",
+      "available": "無料相談・契約義務なし・日本語／英語対応"
+    }
+  },
+  "productNa2Page": {
+    "hero": {
+      "badge": "止まらない自動化、Na2",
+      "title": "ビジネスを動かすAI、Na2",
+      "description": "予約対応・フォローアップ・顧客コミュニケーションを、あらゆるチャネルで24時間365日自動化するマルチエージェント型プラットフォームです。",
+      "seeInAction": "Na2のデモを見る",
+      "talkToTeam": "担当者に相談する"
+    },
+    "meetAgents": {
+      "tag": "製品",
+      "title": "エージェント紹介",
+      "description": "それぞれのエージェントが専門領域を担当。連携することで、顧客業務全体を自動で運用します。",
+      "agents": {
+        "booking": {
+          "name": "予約エージェント",
+          "description": "複数カレンダーを横断して予約を管理"
+        },
+        "followUp": {
+          "name": "フォローアップエージェント",
+          "description": "来院・利用後のフォローおよび再予約対応"
+        },
+        "noShow": {
+          "name": "無断キャンセル防止エージェント",
+          "description": "スマートリマインドによる予防・リスク対応"
+        },
+        "leadResponse": {
+          "name": "リード対応エージェント",
+          "description": "即時対応・見込み顧客の選別"
+        },
+        "registration": {
+          "name": "登録エージェント",
+          "description": "入力フォーム対応・データ収集"
+        },
+        "verification": {
+          "name": "認証エージェント",
+          "description": "保険・資格の確認"
+        },
+        "reminder": {
+          "name": "リマインダーエージェント",
+          "description": "チャネルに最適化されたタイミングで通知"
+        },
+        "escalation": {
+          "name": "エスカレーションエージェント",
+          "description": "複雑な問い合わせを人に引き継ぎ"
+        }
+      },
+      "customAgent": "カスタムエージェントが必要ですか？",
+      "customAgentDescription": "業務フローに合わせたオーダーメイドのエージェントを開発します。"
+    },
+    "preConfigured": {
+      "title": "あなたの業界に最適化された構成",
+      "description": "業界ごとのニーズに正確に合わせた強力な自動化を、数か月ではなく、数週間で導入可能です。",
+      "industries": {
+        "healthcare": {
+          "tag": "医療",
+          "title": "空き枠を自動で埋める。",
+          "features": {
+            "0": "予約管理",
+            "1": "無断キャンセル防止",
+            "2": "フォローアップ",
+            "3": "受付登録",
+            "4": "認証"
+          }
+        },
+        "hospitality": {
+          "tag": "ホスピタリティ",
+          "title": "スタッフ不要で予約対応。",
+          "features": {
+            "0": "予約受付",
+            "1": "ゲスト対応",
+            "2": "レビュー管理",
+            "3": "アップセル"
+          }
+        },
+        "sales": {
+          "tag": "営業",
+          "title": "商談を取りこぼさない。",
+          "features": {
+            "0": "リード対応",
+            "1": "見積対応",
+            "2": "フォローアップ",
+            "3": "商談スケジューリング"
+          }
+        },
+        "insurance": {
+          "tag": "保険",
+          "title": "拡張できる顧客関係管理。",
+          "features": {
+            "0": "更新対応",
+            "1": "保険金請求フォロー",
+            "2": "記念日対応",
+            "3": "リード選別"
+          }
+        }
+      },
+      "demoPlaceholder": "Show Demo For Selected One Here"
+    },
+    "howItWorks": {
+      "tag": "ご利用の流れ",
+      "title": "お問い合わせから解決まで",
+      "steps": {
+        "step1": {
+          "number": "1",
+          "title": "お客様からお問い合わせ",
+          "description": "あらゆるチャネルから受付"
+        },
+        "step2": {
+          "number": "2",
+          "title": "意図を判別",
+          "description": "Na2が最適なエージェントへ自動振り分け"
+        },
+        "step3": {
+          "number": "3",
+          "title": "エージェントが対応",
+          "description": "タスクを自動処理"
+        },
+        "step4": {
+          "number": "4",
+          "title": "アクションを実行",
+          "description": "データをシステムへ同期"
+        },
+        "step5": {
+          "number": "5",
+          "title": "必要に応じてエスカレーション",
+          "description": "担当者がすべての対応履歴を把握"
+        }
+      },
+      "connectsWith": "連携可能なサービス"
+    },
+    "caseStudy": {
+      "tag": "NA2 IN ACTION",
+      "caseStudyBadge": "導入事例",
+      "automationBadge": "5つのフルエージェントと自動化",
+      "title": "米国カイロプラクティック・ネットワーク",
+      "problem": "複数拠点を展開するクリニックが、無断キャンセルや電話対応の増加、営業時間外予約の取りこぼしによって収益を失っているケースなど。",
+      "results": "成果",
+      "metrics": {
+        "noShows": "無断キャンセル",
+        "afterHours": "営業時間外予約",
+        "phoneTime": "電話対応時間",
+        "patientRating": "患者評価"
+      },
+      "readFullCaseStudy": "詳細な導入事例を読む"
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "よくあるご質問",
+      "description": "導入前に知っておきたいポイントをまとめました。",
+      "stillHaveQuestions": "まだご不明な点がありますか？",
+      "contactUs": "お問い合わせ",
+      "questions": {
+        "q1": "Na2は、一般的なチャットボットと何が違うのですか？",
+        "q2": "Na2は電話対応も可能ですか？",
+        "q3": "対応言語は何ですか？",
+        "q4": "導入までにどれくらい時間がかかりますか？",
+        "q5": "セキュリティは安全ですか？"
+      },
+      "answers": {
+        "a1": "Na2は、単なるQ&A対応ではなく、すべてのチャネルにおいて業務フロー全体を実行するマルチエージェント型プラットフォームです。"
+      }
+    },
+    "cta": {
+      "tag": "導入をはじめる",
+      "title": "Na2を実際に見てみませんか？",
+      "description": "料金は、事業規模・対応チャネル・エージェント構成に応じて決定されます。すべての導入は、お客様に最適な構成を設計するためのご相談からスタートします。",
+      "scheduleDemo": "デモを予約する",
+      "contactUs": "お問い合わせ",
+      "available": "無料相談｜日本語・英語対応"
+    }
+  }
+}
+

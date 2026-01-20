@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const CareersCTA: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 px-6">
       <div className="container mx-auto">
@@ -32,13 +34,13 @@ const CareersCTA: React.FC = () => {
           </div>
 
           <div className="relative z-10">
-            <p className="text-[#0040C1] text-sm mb-4">• JOIN US</p>
+            <p className="text-[#0040C1] text-sm mb-4">• {t('careersPage.cta.tag')}</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Build Your Career Here!
+              {t('careersPage.cta.title')}
             </h2>
             
             <p className="text-gray-700 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              If you're looking for meaningful work, supportive teammates, and a culture that values your professional growth, we'd love to hear from you.
+              {t('careersPage.cta.description')}
             </p>
 
             <button
@@ -47,7 +49,7 @@ const CareersCTA: React.FC = () => {
                 background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
               }}
             >
-              Send your CV →
+              {t('careersPage.cta.button')} →
             </button>
           </div>
         </div>

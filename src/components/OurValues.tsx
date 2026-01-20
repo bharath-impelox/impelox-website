@@ -1,30 +1,32 @@
 import React from 'react';
 import { FileText, Network, ClipboardCheck } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const OurValues: React.FC = () => {
+  const { t } = useTranslation();
   const values = [
     {
       icon: FileText,
-      title: 'Clarity Over Complexity',
-      description: 'We value clear thinking and simple solutions. If something can be explained simply, it usually works better.',
+      title: t('careersPage.ourValues.values.clarity.title'),
+      description: t('careersPage.ourValues.values.clarity.description'),
     },
     {
       icon: Network,
-      title: 'Respect for People & Time',
-      description: 'We work with empathy and professionalism. Everyone\'s contribution matters.',
+      title: t('careersPage.ourValues.values.respect.title'),
+      description: t('careersPage.ourValues.values.respect.description'),
     },
     {
       icon: ClipboardCheck,
-      title: 'Build for the Long Term',
-      description: 'We focus on quality, sustainability, and decisions that make sense beyond short-term wins.',
+      title: t('careersPage.ourValues.values.longTerm.title'),
+      description: t('careersPage.ourValues.values.longTerm.description'),
     },
   ];
 
   const lifeAtImpelox = [
-    'Young Teams With Real Responsibility',
-    'Direct Exposure To Customers And Real Problems',
-    'Open Discussions And Honest Feedback',
-    'Space To Grow, Experiment, And Take On New Challenges',
+    t('careersPage.ourValues.lifeAtImpelox.items.youngTeams'),
+    t('careersPage.ourValues.lifeAtImpelox.items.directExposure'),
+    t('careersPage.ourValues.lifeAtImpelox.items.openDiscussions'),
+    t('careersPage.ourValues.lifeAtImpelox.items.spaceToGrow'),
   ];
 
   return (
@@ -32,9 +34,9 @@ const OurValues: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Our Values Section */}
         <div className="mb-16">
-          <p className="text-[#0040C1] text-sm mb-2 text-center">• OUR VALUES</p>
+          <p className="text-[#0040C1] text-sm mb-2 text-center">• {t('careersPage.ourValues.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
-            From inquiry to resolution
+            {t('careersPage.ourValues.title')}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -78,9 +80,9 @@ const OurValues: React.FC = () => {
 
             {/* Right - Life at Impelox content */}
             <div>
-              <p className="text-[#0040C1] text-sm mb-2 uppercase">• LIFE AT IMPELOX</p>
+              <p className="text-[#0040C1] text-sm mb-2 uppercase">• {t('careersPage.ourValues.lifeAtImpelox.tag')}</p>
               <p className="text-lg text-gray-900 mb-6 leading-relaxed">
-                We move fast when needed, slow down when it matters, and always aim to improve.
+                {t('careersPage.ourValues.lifeAtImpelox.description')}
               </p>
               <ul className="space-y-3">
                 {lifeAtImpelox.map((item, index) => (

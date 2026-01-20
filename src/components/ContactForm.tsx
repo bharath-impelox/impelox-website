@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm: React.FC = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -20,7 +22,7 @@ const ContactForm: React.FC = () => {
     <section className="bg-white py-20 px-6">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12">
-          Contact us
+          {t('aboutPage.contactForm.title')}
         </h2>
 
         <div className="max-w-3xl mx-auto">
@@ -29,7 +31,7 @@ const ContactForm: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name<span className="text-[#1B44FE]">*</span>
+                    {t('aboutPage.contactForm.firstName')}<span className="text-[#1B44FE]">*</span>
                   </label>
                   <input
                     type="text"
@@ -41,7 +43,7 @@ const ContactForm: React.FC = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name
+                    {t('aboutPage.contactForm.lastName')}
                   </label>
                   <input
                     type="text"
@@ -55,7 +57,7 @@ const ContactForm: React.FC = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Email<span className="text-[#1B44FE]">*</span>
+                  {t('aboutPage.contactForm.email')}<span className="text-[#1B44FE]">*</span>
                 </label>
                 <input
                   type="email"
@@ -68,7 +70,7 @@ const ContactForm: React.FC = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject
+                  {t('aboutPage.contactForm.subject')}
                 </label>
                 <input
                   type="text"
@@ -81,7 +83,7 @@ const ContactForm: React.FC = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Message<span className="text-[#1B44FE]">*</span>
+                  {t('aboutPage.contactForm.message')}<span className="text-[#1B44FE]">*</span>
                 </label>
                 <textarea
                   name="message"
@@ -100,7 +102,7 @@ const ContactForm: React.FC = () => {
                     background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                   }}
                 >
-                  Send Message →
+                  {t('aboutPage.contactForm.sendMessage')} →
                 </button>
               </div>
             </form>

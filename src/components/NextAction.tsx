@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const NextAction: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-white border m-[40px] rounded-lg py-20 px-6">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <p className='text-[#0040C1]'>FLAGSHIP PRODUCT</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Next Action (Na2)</h2>
+            <p className='text-[#0040C1]'>{t('nextAction.tag')}</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">{t('nextAction.title')}</h2>
             <p className=" text-gray-600 leading-relaxed">
-             A multi-agent AI platform that handles bookings, follow-ups, and customer communication — so your team can focus on what humans do best.
+             {t('nextAction.description')}
             </p>
             <Link
               to="/product/na2"
@@ -20,7 +22,7 @@ const NextAction: React.FC = () => {
                 background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
               }}
             >
-              Explore Na2
+              {t('nextAction.exploreNa2')}
             </Link>
           </div>
 

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const AboutCTA: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 px-6">
       <div className="container mx-auto">
@@ -14,13 +16,13 @@ const AboutCTA: React.FC = () => {
           }}
         >
           <div className="relative z-10">
-            <p className="text-[#0040C1] text-sm mb-4">• GET STARTED</p>
+            <p className="text-[#0040C1] text-sm mb-4">• {t('aboutPage.aboutCTA.tag')}</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Ready to Become an AI-First Company?
+              {t('aboutPage.aboutCTA.title')}
             </h2>
             
             <p className="text-gray-700 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              Move from isolated AI concepts to production-ready systems that automate real workflows and deliver measurable outcomes.
+              {t('aboutPage.aboutCTA.description')}
             </p>
 
             <button
@@ -29,7 +31,7 @@ const AboutCTA: React.FC = () => {
                 background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
               }}
             >
-              Get started today →
+              {t('aboutPage.aboutCTA.button')} →
             </button>
           </div>
         </div>

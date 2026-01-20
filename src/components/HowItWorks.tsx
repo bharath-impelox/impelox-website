@@ -1,36 +1,38 @@
 import React from 'react';
 import { MessageSquare, Route, ClipboardList, Database, AlertCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const HowItWorks: React.FC = () => {
+  const { t } = useTranslation();
   const steps = [
     {
-      number: '1',
-      title: 'Customer Reaches Out',
-      description: 'Any channel',
+      number: t('productNa2Page.howItWorks.steps.step1.number'),
+      title: t('productNa2Page.howItWorks.steps.step1.title'),
+      description: t('productNa2Page.howItWorks.steps.step1.description'),
       icon: MessageSquare,
     },
     {
-      number: '2',
-      title: 'Intent Detected',
-      description: 'Na2 routes to the right agent',
+      number: t('productNa2Page.howItWorks.steps.step2.number'),
+      title: t('productNa2Page.howItWorks.steps.step2.title'),
+      description: t('productNa2Page.howItWorks.steps.step2.description'),
       icon: Route,
     },
     {
-      number: '3',
-      title: 'Agent Engages',
-      description: 'Task handled automatically',
+      number: t('productNa2Page.howItWorks.steps.step3.number'),
+      title: t('productNa2Page.howItWorks.steps.step3.title'),
+      description: t('productNa2Page.howItWorks.steps.step3.description'),
       icon: ClipboardList,
     },
     {
-      number: '4',
-      title: 'Action Executed',
-      description: 'Data synced to your systems',
+      number: t('productNa2Page.howItWorks.steps.step4.number'),
+      title: t('productNa2Page.howItWorks.steps.step4.title'),
+      description: t('productNa2Page.howItWorks.steps.step4.description'),
       icon: Database,
     },
     {
-      number: '5',
-      title: 'Escalation When Needed',
-      description: 'Humans get full context',
+      number: t('productNa2Page.howItWorks.steps.step5.number'),
+      title: t('productNa2Page.howItWorks.steps.step5.title'),
+      description: t('productNa2Page.howItWorks.steps.step5.description'),
       icon: AlertCircle,
     },
   ];
@@ -39,9 +41,9 @@ const HowItWorks: React.FC = () => {
     <section className="bg-white py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <p className="text-[#0040C1] text-sm mb-2">• HOW IT WORKS</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('productNa2Page.howItWorks.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            From inquiry to resolution
+            {t('productNa2Page.howItWorks.title')}
           </h2>
         </div>
 
@@ -105,7 +107,7 @@ const HowItWorks: React.FC = () => {
 
         {/* Connects with Section */}
         <div className="text-center">
-          <h3 className="text-lg font-medium text-gray-700 mb-6">Connects with</h3>
+          <h3 className="text-lg font-medium text-gray-700 mb-6">{t('productNa2Page.howItWorks.connectsWith')}</h3>
           <div className="flex justify-center items-center">
             <img 
               src="/images/na2-communication.png" 

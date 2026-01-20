@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductsHero from '../components/ProductsHero';
@@ -9,59 +10,60 @@ import ProductsCTA from '../components/ProductsCTA';
 import { LayoutGrid, ClipboardList, FileText, Calendar, DollarSign } from 'lucide-react';
 
 const Products = () => {
+  const { t } = useTranslation();
   const products = [
-    { id: 'crm', name: 'CRM', icon: LayoutGrid },
-    { id: 'project-management', name: 'Project Management', icon: ClipboardList },
-    { id: 'contact-form', name: 'Contact form', icon: FileText },
-    { id: 'calendar', name: 'Calendar', icon: Calendar },
-    { id: 'pricing-billing', name: 'Pricing & Billing', icon: DollarSign },
+    { id: 'crm', name: t('productsPage.productDetail.crm.title'), icon: LayoutGrid },
+    { id: 'project-management', name: t('productsPage.productDetail.projectManagement.title'), icon: ClipboardList },
+    { id: 'contact-form', name: t('productsPage.productDetail.contactForm.title'), icon: FileText },
+    { id: 'calendar', name: t('productsPage.productDetail.calendar.title'), icon: Calendar },
+    { id: 'pricing-billing', name: t('productsPage.productDetail.pricingBilling.title'), icon: DollarSign },
   ];
 
   const productDetails = {
     crm: {
       id: 'crm',
-      name: 'CRM',
-      tag: '• Reimagined for AI Execution',
-      title: 'CRM',
-      description: 'Centralizes customer data, tracks lifecycle stages, records every interaction.',
-      withNa2: 'Auto-updates, auto-follow-ups — leads that go cold get re-engaged automatically',
-      standalone: 'Track customers manually',
+      name: t('productsPage.productDetail.crm.title'),
+      tag: `• ${t('productsPage.productDetail.tag')}`,
+      title: t('productsPage.productDetail.crm.title'),
+      description: t('productsPage.productDetail.crm.description'),
+      withNa2: t('productsPage.productDetail.crm.withNa2'),
+      standalone: t('productsPage.productDetail.crm.standalone'),
     },
     'project-management': {
       id: 'project-management',
-      name: 'Project Management',
-      tag: '• Reimagined for AI Execution',
-      title: 'Project Management',
-      description: 'Organize tasks, track progress, manage deadlines across teams.',
-      withNa2: 'Tasks move forward automatically, deadlines are tracked and escalated',
-      standalone: 'Manual task tracking and updates',
+      name: t('productsPage.productDetail.projectManagement.title'),
+      tag: `• ${t('productsPage.productDetail.tag')}`,
+      title: t('productsPage.productDetail.projectManagement.title'),
+      description: t('productsPage.productDetail.projectManagement.description'),
+      withNa2: t('productsPage.productDetail.projectManagement.withNa2'),
+      standalone: t('productsPage.productDetail.projectManagement.standalone'),
     },
     'contact-form': {
       id: 'contact-form',
-      name: 'Contact Form',
-      tag: '• Reimagined for AI Execution',
-      title: 'Contact Form',
-      description: 'Capture inquiries, collect information, route to the right team.',
-      withNa2: 'Automatically routes and responds to inquiries instantly',
-      standalone: 'Manual form processing and routing',
+      name: t('productsPage.productDetail.contactForm.title'),
+      tag: `• ${t('productsPage.productDetail.tag')}`,
+      title: t('productsPage.productDetail.contactForm.title'),
+      description: t('productsPage.productDetail.contactForm.description'),
+      withNa2: t('productsPage.productDetail.contactForm.withNa2'),
+      standalone: t('productsPage.productDetail.contactForm.standalone'),
     },
     calendar: {
       id: 'calendar',
-      name: 'Calendar',
-      tag: '• Reimagined for AI Execution',
-      title: 'Calendar',
-      description: 'Schedule meetings, manage availability, send reminders.',
-      withNa2: 'Auto-schedules, prevents conflicts, sends smart reminders',
-      standalone: 'Manual scheduling and reminders',
+      name: t('productsPage.productDetail.calendar.title'),
+      tag: `• ${t('productsPage.productDetail.tag')}`,
+      title: t('productsPage.productDetail.calendar.title'),
+      description: t('productsPage.productDetail.calendar.description'),
+      withNa2: t('productsPage.productDetail.calendar.withNa2'),
+      standalone: t('productsPage.productDetail.calendar.standalone'),
     },
     'pricing-billing': {
       id: 'pricing-billing',
-      name: 'Pricing & Billing',
-      tag: '• Reimagined for AI Execution',
-      title: 'Pricing & Billing',
-      description: 'Generate quotes, process payments, manage subscriptions.',
-      withNa2: 'Auto-generates quotes, processes payments, follows up on invoices',
-      standalone: 'Manual quote generation and payment tracking',
+      name: t('productsPage.productDetail.pricingBilling.title'),
+      tag: `• ${t('productsPage.productDetail.tag')}`,
+      title: t('productsPage.productDetail.pricingBilling.title'),
+      description: t('productsPage.productDetail.pricingBilling.description'),
+      withNa2: t('productsPage.productDetail.pricingBilling.withNa2'),
+      standalone: t('productsPage.productDetail.pricingBilling.standalone'),
     },
   };
 
@@ -78,22 +80,22 @@ const Products = () => {
           {/* Autonomy Indicator - Top */}
           <div className="space-y-4 mb-8">
             <div className="flex items-center justify-center gap-3">
-              <span className="text-[#1B44FE] font-medium text-sm whitespace-nowrap">With Na2</span>
+              <span className="text-[#1B44FE] font-medium text-sm whitespace-nowrap">{t('productsPage.autonomy.withNa2')}</span>
               {/* Toggle Switch */}
               <div className="relative inline-flex items-center">
                 <div className="w-10 h-5 bg-gray-900 rounded-full relative">
                   <div className="absolute right-0.5 top-0.5 w-4 h-4 bg-[#1B44FE] rounded-full"></div>
                 </div>
               </div>
-              <span className="text-gray-900 font-medium text-sm whitespace-nowrap">Standalone</span>
+              <span className="text-gray-900 font-medium text-sm whitespace-nowrap">{t('productsPage.autonomy.standalone')}</span>
             </div>
             
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Now fully autonomous
+                {t('productsPage.autonomy.title')}
               </h3>
               <p className="text-gray-600">
-                Great alone. Unstoppable together. 24/7 performance across your entire workflow.
+                {t('productsPage.autonomy.description')} {t('productsPage.autonomy.subtitle')}
               </p>
             </div>
           </div>

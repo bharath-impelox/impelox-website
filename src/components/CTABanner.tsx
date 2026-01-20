@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const CTABanner: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 bg-gray-50 px-6">
       <div className="container mx-auto">
@@ -39,11 +41,11 @@ const CTABanner: React.FC = () => {
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Ready to Automate Your Customer Operations?
+              {t('ctaBanner.title')}
             </h2>
             
             <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-95">
-              Book a consultation. We'll help you find the right solution — product or custom.
+              {t('ctaBanner.description')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
@@ -53,19 +55,19 @@ const CTABanner: React.FC = () => {
                   background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                 }}
               >
-                Schedule a Demo →
+                {t('ctaBanner.scheduleDemo')} →
               </button>
               
               <Link
                 to="/contact-us"
                 className="bg-white text-[#1B44FE] px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-base whitespace-nowrap inline-block"
               >
-                Contact Us
+                {t('ctaBanner.contactUs')}
               </Link>
             </div>
 
             <p className="text-white text-sm opacity-90">
-              Available in English and Japanese.
+              {t('ctaBanner.available')}
             </p>
           </div>
         </div>

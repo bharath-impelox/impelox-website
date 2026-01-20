@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const ProductsHero: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gray-100 py-20 px-6">
       <div className="container mx-auto max-w-6xl">
@@ -14,19 +16,19 @@ const ProductsHero: React.FC = () => {
               }} 
               className='text-white rounded-xl p-1 mr-2'
             >
-              The AI Brain
+              {t('productsPage.hero.aiBrain')}
             </span>
-            The Impelox Product Suite
+            {t('productsPage.hero.productSuite')}
           </span>
         </div>
 
         {/* Text Content - Centered */}
         <div className="text-center space-y-6 pb-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Business tools that execute themselves
+            {t('productsPage.hero.title')}
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Five products that work great standalone. Connect to Na2 and they become fully autonomous.
+            {t('productsPage.hero.description')}
           </p>
           
           {/* CTA Buttons */}
@@ -38,10 +40,10 @@ const ProductsHero: React.FC = () => {
                 background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
               }}
             >
-              Explore Na2—The AI Brain
+              {t('productsPage.hero.exploreNa2')}
             </Link>
             <button className="bg-white shadow px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium text-base border border-gray-200">
-              See All Products Below
+              {t('productsPage.hero.seeAllProducts')}
             </button>
           </div>
         </div>

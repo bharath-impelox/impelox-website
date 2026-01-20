@@ -1,28 +1,51 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const PreConfiguredIndustry: React.FC = () => {
+  const { t } = useTranslation();
   const [selectedIndustry, setSelectedIndustry] = useState(0);
 
   const industries = [
     {
-      tag: 'Healthcare',
-      title: 'Fill Every Empty Slot. Automatically.',
-      features: ['Booking', 'No-Show Prevention', 'Follow-Up', 'Registration', 'Verification'],
+      tag: t('productNa2Page.preConfigured.industries.healthcare.tag'),
+      title: t('productNa2Page.preConfigured.industries.healthcare.title'),
+      features: [
+        t('productNa2Page.preConfigured.industries.healthcare.features.0'),
+        t('productNa2Page.preConfigured.industries.healthcare.features.1'),
+        t('productNa2Page.preConfigured.industries.healthcare.features.2'),
+        t('productNa2Page.preConfigured.industries.healthcare.features.3'),
+        t('productNa2Page.preConfigured.industries.healthcare.features.4'),
+      ],
     },
     {
-      tag: 'Hospitality',
-      title: 'inbound bookings. no staff required.',
-      features: ['Reservations', 'Guest Communication', 'Reviews', 'Upsells'],
+      tag: t('productNa2Page.preConfigured.industries.hospitality.tag'),
+      title: t('productNa2Page.preConfigured.industries.hospitality.title'),
+      features: [
+        t('productNa2Page.preConfigured.industries.hospitality.features.0'),
+        t('productNa2Page.preConfigured.industries.hospitality.features.1'),
+        t('productNa2Page.preConfigured.industries.hospitality.features.2'),
+        t('productNa2Page.preConfigured.industries.hospitality.features.3'),
+      ],
     },
     {
-      tag: 'Sales',
-      title: 'Never Let A Deal Go Cold.',
-      features: ['Lead Response', 'Quotation', 'Follow-Up', 'Meeting Scheduling'],
+      tag: t('productNa2Page.preConfigured.industries.sales.tag'),
+      title: t('productNa2Page.preConfigured.industries.sales.title'),
+      features: [
+        t('productNa2Page.preConfigured.industries.sales.features.0'),
+        t('productNa2Page.preConfigured.industries.sales.features.1'),
+        t('productNa2Page.preConfigured.industries.sales.features.2'),
+        t('productNa2Page.preConfigured.industries.sales.features.3'),
+      ],
     },
     {
-      tag: 'Insurance',
-      title: 'Client Relationships That Scale.',
-      features: ['Renewals', 'Claims Follow-Up', 'Anniversaries', 'Lead Qualification'],
+      tag: t('productNa2Page.preConfigured.industries.insurance.tag'),
+      title: t('productNa2Page.preConfigured.industries.insurance.title'),
+      features: [
+        t('productNa2Page.preConfigured.industries.insurance.features.0'),
+        t('productNa2Page.preConfigured.industries.insurance.features.1'),
+        t('productNa2Page.preConfigured.industries.insurance.features.2'),
+        t('productNa2Page.preConfigured.industries.insurance.features.3'),
+      ],
     },
   ];
 
@@ -33,7 +56,7 @@ const PreConfiguredIndustry: React.FC = () => {
           {/* Left Column - Heading and Industry Cards */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Pre-Configured for your Industry
+              {t('productNa2Page.preConfigured.title')}
             </h2>
             
             {industries.map((industry, index) => (
@@ -72,12 +95,12 @@ const PreConfiguredIndustry: React.FC = () => {
           {/* Right Column - Tagline and Demo Area */}
           <div className="space-y-6">
             <p className="text-lg text-gray-600">
-              Powerful automation tailored to the exact needs of your industry deployed in weeks, not months.
+              {t('productNa2Page.preConfigured.description')}
             </p>
             
             <div className="bg-white border border-gray-300 rounded-xl p-12 h-96 flex flex-col items-center justify-end relative">
               <p className="text-gray-400 text-sm absolute bottom-4">
-                Show Demo For Selected One Here
+                {t('productNa2Page.preConfigured.demoPlaceholder')}
               </p>
             </div>
           </div>

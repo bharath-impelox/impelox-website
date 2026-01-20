@@ -1,22 +1,24 @@
 import React from 'react';
 import { Zap, TrendingUp, Headphones } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const CoreValues: React.FC = () => {
+  const { t } = useTranslation();
   const values = [
     {
       icon: Zap,
-      title: 'Contextual Intelligence',
-      description: 'AI without context produces limited outcomes. True intelligence comes from understanding intent, history, and real-world conditions, enabling systems to respond accurately and act with relevance across every scenario.',
+      title: t('aboutPage.coreValues.contextualIntelligence.title'),
+      description: t('aboutPage.coreValues.contextualIntelligence.description'),
     },
     {
       icon: TrendingUp,
-      title: 'Scalable & Secure',
-      description: 'Reliable systems must grow with the business while remaining reliable and protected. Our platforms are designed to scale across teams and use cases, with security built in from the foundation to meet enterprise expectations.',
+      title: t('aboutPage.coreValues.scalableSecure.title'),
+      description: t('aboutPage.coreValues.scalableSecure.description'),
     },
     {
       icon: Headphones,
-      title: 'Customer-Centric',
-      description: 'Technology should adapt to the business, not the other way around. Every solution is designed around specific operational needs, ensuring measurable value, smoother adoption, and long-term alignment with customer goals.',
+      title: t('aboutPage.coreValues.customerCentric.title'),
+      description: t('aboutPage.coreValues.customerCentric.description'),
     },
   ];
 
@@ -24,7 +26,7 @@ const CoreValues: React.FC = () => {
     <section className="bg-white py-20 px-6">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12">
-          Our core values
+          {t('aboutPage.coreValues.title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">

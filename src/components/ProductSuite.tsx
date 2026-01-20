@@ -1,54 +1,56 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const ProductSuite: React.FC = () => {
+  const { t } = useTranslation();
   const products = [
     { 
-      title: 'CRM', 
+      title: t('productSuite.crm.title'), 
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="#1B44FE" viewBox="0 0 24 24" style={{ color: '#1B44FE' }}>
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="#1B44FE" />
           <circle cx="12" cy="12" r="2" fill="#1B44FE" />
         </svg>
       ),
-      description: 'Customer data that updates and acts on itself.' 
+      description: t('productSuite.crm.description')
     },
     { 
-      title: 'Project Management', 
+      title: t('productSuite.projectManagement.title'), 
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="#1B44FE" viewBox="0 0 24 24" style={{ color: '#1B44FE' }}>
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="#1B44FE" />
         </svg>
       ),
-      description: 'Tasks that move forward — even when people forget.' 
+      description: t('productSuite.projectManagement.description')
     },
     { 
-      title: 'Contact Form', 
+      title: t('productSuite.contactForm.title'), 
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="#1B44FE" viewBox="0 0 24 24" style={{ color: '#1B44FE' }}>
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="#1B44FE" />
         </svg>
       ),
-      description: 'Keep tabs on all your regular payments and set them up to run automatically, all in one spot!' 
+      description: t('productSuite.contactForm.description')
     },
     { 
-      title: 'Calendar', 
+      title: t('productSuite.calendar.title'), 
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="#1B44FE" viewBox="0 0 24 24" style={{ color: '#1B44FE' }}>
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="#1B44FE" />
         </svg>
       ),
-      description: 'Download detailed financial reports and statements anytime for easy record-keeping.' 
+      description: t('productSuite.calendar.description')
     },
     { 
-      title: 'Pricing & Billing', 
+      title: t('productSuite.pricingBilling.title'), 
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="#1B44FE" viewBox="0 0 24 24" style={{ color: '#1B44FE' }}>
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="#1B44FE" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#1B44FE" />
         </svg>
       ),
-      description: 'Easily manage shared accounts with family or team members with customizable access levels.' 
+      description: t('productSuite.pricingBilling.description')
     },
   ];
 
@@ -56,12 +58,12 @@ const ProductSuite: React.FC = () => {
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[#0040C1] text-sm mb-2">• OTHER PRODUCTS</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('productSuite.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            The <span className="text-[#1B44FE]">Impelox</span> Product Suite
+            {t('productSuite.title')} <span className="text-[#1B44FE]">{t('productSuite.titleHighlight')}</span> {t('productSuite.titleSuffix')}
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
-            Na2 is powerful alone. Even better with our integrated tools.
+            {t('productSuite.description')}
           </p>
         </div>
 
@@ -101,7 +103,7 @@ const ProductSuite: React.FC = () => {
               background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
             }}
           >
-            Explore All Products →
+            {t('productSuite.exploreAll')} →
           </Link>
         </div>
       </div>

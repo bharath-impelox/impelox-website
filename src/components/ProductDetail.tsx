@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface ProductDetailProps {
   product: {
@@ -15,6 +16,7 @@ interface ProductDetailProps {
 }
 
 const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
+  const { t } = useTranslation();
   // Use CRM image for CRM product, or use provided image, or placeholder
   const imageSrc = product.image || (product.id === 'crm' ? '/images/crm.png' : null);
 
@@ -60,7 +62,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                   <Check className="w-4 h-4  text-[#0040C1] " />
                 </div>
                 <p className="text-gray-700 text-sm">
-                  <span className="font-medium text-[#1B44FE]">With Na2:</span> {product.withNa2}
+                  <span className="font-medium text-[#1B44FE]">{t('productsPage.productDetail.withNa2')}</span> {product.withNa2}
                 </p>
               </div>
               
@@ -69,7 +71,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                   <X className="w-4 h-4 text-[#0A0B10]" />
                 </div>
                 <p className="text-gray-700 text-sm">
-                  <span className="font-medium text-gray-500">Standalone:</span> {product.standalone}
+                  <span className="font-medium text-gray-500">{t('productsPage.productDetail.standalone')}</span> {product.standalone}
                 </p>
               </div>
             </div>
@@ -82,7 +84,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                   background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                 }}
               >
-                Learn more
+                {t('productsPage.productDetail.learnMore')}
               </button>
             </div>
           </div>

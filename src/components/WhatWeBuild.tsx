@@ -1,35 +1,37 @@
 import React from 'react';
 import { Brain, MessageSquare, Workflow, Cloud } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const WhatWeBuild: React.FC = () => {
+  const { t } = useTranslation();
   const services = [
     {
       icon: Brain,
-      title: 'Bespoke Agent Development',
-      description: 'Custom AI agents tailored to your exact workflow — unique approval processes, specialized interactions, industry-specific tasks. We design, build, integrate, and optimize.',
+      title: t('servicesPage.whatWeBuild.bespokeAgent.title'),
+      description: t('servicesPage.whatWeBuild.bespokeAgent.description'),
       hasVisual: false,
       iconPosition: 'top-left',
     },
     {
       icon: MessageSquare,
-      title: 'Chatbot with RAG',
-      description: 'Chatbots that understand your business. Answers questions accurately by pulling from your documentation and internal data. Deploy across web, LINE, or WhatsApp.',
+      title: t('servicesPage.whatWeBuild.chatbotRAG.title'),
+      description: t('servicesPage.whatWeBuild.chatbotRAG.description'),
       hasVisual: true,
       iconPosition: 'top-left',
       visualImage: '/images/bespoke-agent.png',
     },
     {
       icon: Workflow,
-      title: 'Contextually Intelligent Workflow Automation',
-      description: 'Automation that understands context — adapting to exceptions and handling complexity that rule-based systems can\'t.',
+      title: t('servicesPage.whatWeBuild.workflowAutomation.title'),
+      description: t('servicesPage.whatWeBuild.workflowAutomation.description'),
       hasVisual: true,
       iconPosition: 'top-left',
       visualImage: '/images/workflow-automation.png',
     },
     {
       icon: Cloud,
-      title: 'AI SaaS Implementation',
-      description: 'Struggling to get value from AI tools you\'ve bought? We implement, configure, and integrate them into your actual workflows.',
+      title: t('servicesPage.whatWeBuild.aiSaaS.title'),
+      description: t('servicesPage.whatWeBuild.aiSaaS.description'),
       hasVisual: false,
       iconPosition: 'top-left',
     },
@@ -39,9 +41,9 @@ const WhatWeBuild: React.FC = () => {
     <section className="bg-white py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-[#0040C1] text-sm mb-2">• OVERVIEW</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('servicesPage.whatWeBuild.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            What we build
+            {t('servicesPage.whatWeBuild.title')}
           </h2>
         </div>
 
@@ -64,7 +66,7 @@ const WhatWeBuild: React.FC = () => {
                 {service.hasVisual ? (
                   <>
                     {/* For Workflow Automation: image left, content right */}
-                    {service.title === 'Contextually Intelligent Workflow Automation' ? (
+                    {index === 2 ? (
                       <>
                         {/* Left - Visual Section */}
                         <div className="w-1/2 h-auto flex items-center justify-center relative flex-shrink-0 bg-transparent">

@@ -1,32 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const CustomAI: React.FC = () => {
+  const { t } = useTranslation();
   const services = [
     {
-      title: 'Chatbot with RAG',
-      subtitle: 'Intelligent conversations powered by your data',
+      title: t('customAI.chatbotRAG.title'),
+      subtitle: t('customAI.chatbotRAG.subtitle'),
       visual: 'chatbot',
       dark: true,
       hasButton: false,
     },
     {
-      title: 'Bespoke Agent Development',
-      subtitle: 'Custom AI agents for your specific workflow',
+      title: t('customAI.bespokeAgent.title'),
+      subtitle: t('customAI.bespokeAgent.subtitle'),
       visual: 'bespoke',
       dark: false,
       hasButton: true,
     },
     {
-      title: 'Workflow Automation',
-      subtitle: 'Automation that understands context',
+      title: t('customAI.workflowAutomation.title'),
+      subtitle: t('customAI.workflowAutomation.subtitle'),
       visual: 'workflow',
       dark: false,
       hasButton: true,
     },
     {
-      title: 'AI SaaS Implementation',
-      subtitle: 'We make your AI tools actually work',
+      title: t('customAI.aiSaaS.title'),
+      subtitle: t('customAI.aiSaaS.subtitle'),
       visual: 'saas',
       dark: false,
       hasButton: false,
@@ -37,12 +39,12 @@ const CustomAI: React.FC = () => {
     <section className="bg-white py-20 px-6 border border-blue-200">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[#0040C1] text-sm mb-2">• YOUR PARTNER IN AI</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('customAI.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Custom AI Development
+            {t('customAI.title')}
           </h2>
           <p className="text-base text-gray-700 max-w-2xl mx-auto">
-            When off-the-shelf isn't enough, we build it for you.
+            {t('customAI.description')}
           </p>
         </div>
 
@@ -97,7 +99,7 @@ const CustomAI: React.FC = () => {
                         background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                       }}
                     >
-                      Explore Services →
+                      {t('customAI.bespokeAgent.exploreServices')} →
                     </Link>
                   )}
                 </div>
@@ -165,7 +167,7 @@ const CustomAI: React.FC = () => {
                         background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                       }}
                     >
-                      Explore Services →
+                      {t('customAI.bespokeAgent.exploreServices')} →
                     </Link>
                   )}
                 </div>

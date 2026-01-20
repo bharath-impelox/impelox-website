@@ -1,10 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Na2InAction: React.FC = () => {
+  const { t } = useTranslation();
   const stats = [
-    { value: '34%', label: 'fewer no-shows' },
-    { value: '60%', label: 'less staff phone time' },
-    { value: '45%', label: 'after-hours bookings captured' },
+    { value: '34%', label: t('na2InAction.fewerNoShows') },
+    { value: '60%', label: t('na2InAction.lessPhoneTime') },
+    { value: '45%', label: t('na2InAction.afterHoursBookings') },
   ];
 
   return (
@@ -12,8 +14,8 @@ const Na2InAction: React.FC = () => {
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#0040C1] text-sm mb-2">• METRICS</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Na2 in action</h2>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('na2InAction.tag')}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">{t('na2InAction.title')}</h2>
         </div>
 
         {/* Main Card */}
@@ -39,10 +41,10 @@ const Na2InAction: React.FC = () => {
             {/* Right Section - Testimonial */}
             <div className="border-l border-[#1B44FE] pl-8 md:pl-12 mt-8 md:mt-0">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                "Na2 handles calls that would have gone to voicemail. Patients get scheduled. We get paid."
+                {t('na2InAction.testimonial')}
               </p>
               <div className="text-sm text-gray-500">
-                Operations Director, US Chiropractic Network
+                {t('na2InAction.testimonialAuthor')}
               </div>
             </div>
           </div>

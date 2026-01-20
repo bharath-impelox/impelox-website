@@ -1,27 +1,29 @@
 import React from 'react';
 import { Sparkles, BarChart3, Headphones, BookOpen } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const OurCulture: React.FC = () => {
+  const { t } = useTranslation();
   const cultureItems = [
     {
       icon: Sparkles,
-      title: 'We Care About How Work Gets Done',
-      description: 'We believe great outcomes come from strong fundamentals—clear thinking, good communication, and respect for each other\'s time and effort. We move with purpose, and focus on doing the work.',
+      title: t('careersPage.ourCulture.items.workGetsDone.title'),
+      description: t('careersPage.ourCulture.items.workGetsDone.description'),
     },
     {
       icon: BarChart3,
-      title: 'Ownership Over Control',
-      description: 'People at Impelox are trusted to own their work. We value initiative, accountability, and decision-making at every level. You\'re encouraged to speak up, take responsibility, and help shape how we grow.',
+      title: t('careersPage.ourCulture.items.ownership.title'),
+      description: t('careersPage.ourCulture.items.ownership.description'),
     },
     {
       icon: Headphones,
-      title: 'Collaboration Is the Default',
-      description: 'We work closely across teams. Engineers talk to customers. Product works with business teams. Ideas are shared openly, and feedback is part of how we improve—not something to avoid.',
+      title: t('careersPage.ourCulture.items.collaboration.title'),
+      description: t('careersPage.ourCulture.items.collaboration.description'),
     },
     {
       icon: BookOpen,
-      title: 'Learning Through Doing',
-      description: 'You don\'t need to know everything on day one. We believe in learning through doing, asking questions, and improving continuously. Growth here is practical and hands-on.',
+      title: t('careersPage.ourCulture.items.learning.title'),
+      description: t('careersPage.ourCulture.items.learning.description'),
     },
   ];
 
@@ -29,7 +31,7 @@ const OurCulture: React.FC = () => {
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-          Our culture
+          {t('careersPage.ourCulture.title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

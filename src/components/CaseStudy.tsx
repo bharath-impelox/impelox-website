@@ -1,11 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const CaseStudy: React.FC = () => {
+  const { t } = useTranslation();
   const results = [
-    { metric: 'No-shows', change: '↓34%', position: 'left' },
-    { metric: 'After-hours bookings', change: '↑45%', position: 'left' },
-    { metric: 'Phone time', change: '↓60%', position: 'right' },
-    { metric: 'Patient rating', change: '4.8/5', position: 'right' },
+    { metric: t('productNa2Page.caseStudy.metrics.noShows'), change: '↓34%', position: 'left' },
+    { metric: t('productNa2Page.caseStudy.metrics.afterHours'), change: '↑45%', position: 'left' },
+    { metric: t('productNa2Page.caseStudy.metrics.phoneTime'), change: '↓60%', position: 'right' },
+    { metric: t('productNa2Page.caseStudy.metrics.patientRating'), change: '4.8/5', position: 'right' },
   ];
 
   return (
@@ -23,7 +25,7 @@ const CaseStudy: React.FC = () => {
             <div className="flex items-center gap-3 flex-wrap">
               <div className="flex items-center gap-2">
                 <span className="text-[#0040C1] text-sm">•</span>
-                <span className="text-[#0040C1] text-sm">NA2 IN ACTION</span>
+                <span className="text-[#0040C1] text-sm">{t('productNa2Page.caseStudy.tag')}</span>
               </div>
               <span className="text-sm shadow-sm bg-white font-medium p-2 rounded-xl">
                 <span 
@@ -32,27 +34,27 @@ const CaseStudy: React.FC = () => {
                   }} 
                   className="text-white rounded-xl p-1 mr-1"
                 >
-                  Case study
+                  {t('productNa2Page.caseStudy.caseStudyBadge')}
                 </span>
-                5 full agents and automation
+                {t('productNa2Page.caseStudy.automationBadge')}
               </span>
             </div>
 
             {/* Title */}
             <h2 className="text-slate-800 text-4xl md:text-5xl font-bold">
-              US Chiropractic Network
+              {t('productNa2Page.caseStudy.title')}
             </h2>
 
             {/* Problem Description */}
             <p className="text-slate-700text-lg leading-relaxed">
-              Multi-location clinic losing revenue to no-shows, drowning in phone calls, missing after-hours bookings.
+              {t('productNa2Page.caseStudy.problem')}
             </p>
 
             {/* Results Section */}
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <span className="text-[#0040C1] text-sm">•</span>
-                <h3 className="text-slate-800 font-semibold">Results</h3>
+                <h3 className="text-slate-800 font-semibold">{t('productNa2Page.caseStudy.results')}</h3>
               </div>
 
               {/* Metrics Grid */}
@@ -83,7 +85,7 @@ const CaseStudy: React.FC = () => {
                 background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
               }}
             >
-              Read Full Case Study →
+              {t('productNa2Page.caseStudy.readFullCaseStudy')} →
             </button>
           </div>
         </div>

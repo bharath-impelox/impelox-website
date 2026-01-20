@@ -1,18 +1,22 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const WhatWeveBuilt: React.FC = () => {
+  const { t } = useTranslation();
   const caseStudies = [
     {
-      tag: 'Insurance Technology',
-      category: '• INSURANCE PLATFORM',
-      title: 'From Zero to 25% Market Share',
-      description: 'A health insurance tech founder came to us the night before their investor meeting. They had a vision but no product — just an idea and 12 hours to make it real.',
+      tag: t('servicesPage.whatWeveBuilt.insuranceTech.tag'),
+      category: `• ${t('servicesPage.whatWeveBuilt.insuranceTech.category')}`,
+      title: t('servicesPage.whatWeveBuilt.insuranceTech.title'),
+      description: t('servicesPage.whatWeveBuilt.insuranceTech.description'),
+      learnMore: t('servicesPage.whatWeveBuilt.insuranceTech.learnMore'),
     },
     {
-      tag: 'Customer Support AI',
-      category: '• 3D AVATAR AGENTS',
-      title: 'From Document Chatbot to AI Avatar Platform',
-      description: 'A chatbot that can read and answer documents. They envisioned something more human, more engaging. We transformed it into a complete AI avatar platform.',
+      tag: t('servicesPage.whatWeveBuilt.customerSupport.tag'),
+      category: `• ${t('servicesPage.whatWeveBuilt.customerSupport.category')}`,
+      title: t('servicesPage.whatWeveBuilt.customerSupport.title'),
+      description: t('servicesPage.whatWeveBuilt.customerSupport.description'),
+      learnMore: t('servicesPage.whatWeveBuilt.customerSupport.learnMore'),
     },
   ];
 
@@ -20,12 +24,12 @@ const WhatWeveBuilt: React.FC = () => {
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-[#0040C1] text-sm mb-2">• CASE STUDY</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('servicesPage.whatWeveBuilt.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            What we've build
+            {t('servicesPage.whatWeveBuilt.title')}
           </h2>
           <p className="text-lg text-gray-600">
-            Deep domain expertise. AI-accelerated execution. Production-ready from day one.
+            {t('servicesPage.whatWeveBuilt.description')}
           </p>
         </div>
 
@@ -84,7 +88,7 @@ const WhatWeveBuilt: React.FC = () => {
                     background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                   }}
                 >
-                  Learn more
+                  {study.learnMore}
                 </button>
               </div>
             </div>

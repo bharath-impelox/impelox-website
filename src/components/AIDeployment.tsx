@@ -1,14 +1,16 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const AIDeployment: React.FC = () => {
+  const { t } = useTranslation();
   const features = [
-    'Custom AI Agents Development',
-    'Chatbot Integration',
-    'Machine Learning Solutions',
-    'Business Process Automation',
-    'Startup SaaS Development',
-    'AI-First Transformation',
+    t('aboutPage.aiDeployment.features.customAI'),
+    t('aboutPage.aiDeployment.features.chatbotIntegration'),
+    t('aboutPage.aiDeployment.features.machineLearning'),
+    t('aboutPage.aiDeployment.features.businessProcess'),
+    t('aboutPage.aiDeployment.features.startupSaaS'),
+    t('aboutPage.aiDeployment.features.aiFirst'),
   ];
 
   return (
@@ -16,10 +18,10 @@ const AIDeployment: React.FC = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Let's Deploy AI Tailored for Your Use Case
+            {t('aboutPage.aiDeployment.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            80% of your requirements can be streamlined with NA2 and our other sub-platforms. If your business demands systems designed around your exact needs, data, and constraints, we can deliver that.
+            {t('aboutPage.aiDeployment.description')}
           </p>
         </div>
 
@@ -27,10 +29,10 @@ const AIDeployment: React.FC = () => {
           {/* Left Card */}
           <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
             <p className="text-gray-600 mb-6">
-              80% of your requirements can be streamlined with NA2 and our other sub-platforms. If your business demands systems designed around your exact needs, data, and constraints, we can deliver that.
+              {t('aboutPage.aiDeployment.description')}
             </p>
             <p className="text-gray-900 font-medium mb-6">
-              No generic workflows, no locked-in platforms.
+              {t('aboutPage.aiDeployment.noGeneric')}
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (

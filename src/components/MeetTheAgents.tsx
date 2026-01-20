@@ -1,46 +1,48 @@
 import React from 'react';
 import { Calendar, MessageSquare, Bell, FileText, ClipboardCheck, ShieldCheck, Clock, UserCheck } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const MeetTheAgents: React.FC = () => {
+  const { t } = useTranslation();
   const agents = [
     {
-      name: 'Booking Agent',
-      description: 'Schedules across multiple calendars',
+      name: t('productNa2Page.meetAgents.agents.booking.name'),
+      description: t('productNa2Page.meetAgents.agents.booking.description'),
       icon: Calendar,
     },
     {
-      name: 'Follow-Up Agent',
-      description: 'Post-visit check-ins and rebooking',
+      name: t('productNa2Page.meetAgents.agents.followUp.name'),
+      description: t('productNa2Page.meetAgents.agents.followUp.description'),
       icon: MessageSquare,
     },
     {
-      name: 'No-Show Prevention Agent',
-      description: 'Smart reminders, at-risk intervention',
+      name: t('productNa2Page.meetAgents.agents.noShow.name'),
+      description: t('productNa2Page.meetAgents.agents.noShow.description'),
       icon: Bell,
     },
     {
-      name: 'Lead Response Agent',
-      description: 'Instant engagement, qualification',
+      name: t('productNa2Page.meetAgents.agents.leadResponse.name'),
+      description: t('productNa2Page.meetAgents.agents.leadResponse.description'),
       icon: FileText,
     },
     {
-      name: 'Registration Agent',
-      description: 'Intake forms, data collection',
+      name: t('productNa2Page.meetAgents.agents.registration.name'),
+      description: t('productNa2Page.meetAgents.agents.registration.description'),
       icon: ClipboardCheck,
     },
     {
-      name: 'Verification Agent',
-      description: 'Insurance and eligibility confirmation',
+      name: t('productNa2Page.meetAgents.agents.verification.name'),
+      description: t('productNa2Page.meetAgents.agents.verification.description'),
       icon: ShieldCheck,
     },
     {
-      name: 'Reminder Agent',
-      description: 'Timely, channel-appropriate reminders',
+      name: t('productNa2Page.meetAgents.agents.reminder.name'),
+      description: t('productNa2Page.meetAgents.agents.reminder.description'),
       icon: Clock,
     },
     {
-      name: 'Escalation Agent',
-      description: 'Routes complex issues to humans',
+      name: t('productNa2Page.meetAgents.agents.escalation.name'),
+      description: t('productNa2Page.meetAgents.agents.escalation.description'),
       icon: UserCheck,
     },
   ];
@@ -49,12 +51,12 @@ const MeetTheAgents: React.FC = () => {
     <section className="bg-white py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <p className="text-[#0040C1] text-sm mb-2">• PRODUCTS</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('productNa2Page.meetAgents.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Meet the Agents
+            {t('productNa2Page.meetAgents.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Each agent is a specialist. Together, they run your entire customer operation.
+            {t('productNa2Page.meetAgents.description')}
           </p>
         </div>
 
@@ -116,7 +118,7 @@ const MeetTheAgents: React.FC = () => {
         </div>
 
         <p className="text-center text-gray-600 text-sm">
-          <span className='text-[#1B44FE]'>Need a custom agent?</span> We build bespoke agents for specific workflows.
+          <span className='text-[#1B44FE]'>{t('productNa2Page.meetAgents.customAgent')}</span> {t('productNa2Page.meetAgents.customAgentDescription')}
         </p>
       </div>
     </section>

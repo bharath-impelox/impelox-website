@@ -1,13 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const OurEngagementProcess: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-[#0040C1] text-sm mb-2">• HOW WE WORK</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('servicesPage.engagementProcess.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Engagement Process
+            {t('servicesPage.engagementProcess.title')}
           </h2>
         </div>
 

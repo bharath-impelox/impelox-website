@@ -1,21 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const RegulatedIndustries: React.FC = () => {
+  const { t } = useTranslation();
   const industries = [
     {
-      title: 'Healthcare',
+      title: t('regulatedIndustries.healthcare'),
       icon: '/images/healthcare-icon.png',
     },
     {
-      title: 'Hospitality',
+      title: t('regulatedIndustries.hospitality'),
       icon: '/images/hospitality-icon.png',
     },
     {
-      title: 'Sales',
+      title: t('regulatedIndustries.sales'),
       icon: '/images/sales-icon.png',
     },
     {
-      title: 'Insurance',
+      title: t('regulatedIndustries.insurance'),
       icon: '/images/insurance-icon.png',
     },
   ];
@@ -28,12 +30,12 @@ const RegulatedIndustries: React.FC = () => {
       className="m-[100px] rounded-lg py-20 px-6 relative overflow-hidden">
       <div className="container  relative z-10">
         <div className="text-center mb-16">
-          <p className='text-[#0040C1]'>INDUSTRIES</p>
+          <p className='text-[#0040C1]'>{t('regulatedIndustries.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Built for Regulated <br></br> <span className='text-[#1B44FE]'>Industries</span>
+            {t('regulatedIndustries.title')} <br></br> <span className='text-[#1B44FE]'>{t('regulatedIndustries.titleHighlight')}</span>
           </h2>
           <p className=" text-gray-600 max-w-2xl mx-auto">
-            We specialize in industries where compliance matters and errors aren't an option.
+            {t('regulatedIndustries.description')}
           </p>
         </div>
 
@@ -62,7 +64,7 @@ const RegulatedIndustries: React.FC = () => {
             style={{
               background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
             }}>
-            See Industry Solutions
+            {t('regulatedIndustries.seeSolutions')}
           </button>
         </div>
       </div>

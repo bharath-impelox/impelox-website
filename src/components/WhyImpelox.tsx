@@ -1,24 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CircleCheck } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const WhyImpelox: React.FC = () => {
+  const { t } = useTranslation();
   const features = [
     {
-      title: 'Regulated Industry Expertise',
-      description: 'HIPAA, SOC 2, ISO27001, GDPR-aware architecture.',
+      title: t('whyImpelox.regulatedExpertise.title'),
+      description: t('whyImpelox.regulatedExpertise.description'),
     },
     {
-      title: 'Japan Market Experience',
-      description: 'Kansai region experience. Native Japanese support.',
+      title: t('whyImpelox.japanExperience.title'),
+      description: t('whyImpelox.japanExperience.description'),
     },
     {
-      title: '20+ Engineers',
-      description: 'Full team in Chennai. Production-grade systems.',
+      title: t('whyImpelox.engineers.title'),
+      description: t('whyImpelox.engineers.description'),
     },
     {
-      title: 'We Stay Until It Works',
-      description: 'Implementation, integration, and support included.',
+      title: t('whyImpelox.stayUntilWorks.title'),
+      description: t('whyImpelox.stayUntilWorks.description'),
     },
   ];
 
@@ -26,9 +28,9 @@ const WhyImpelox: React.FC = () => {
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[#0040C1] text-sm mb-2">• WHY US</p>
+          <p className="text-[#0040C1] text-sm mb-2">• {t('whyImpelox.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Why Impelox
+            {t('whyImpelox.title')}
           </h2>
         </div>
 
@@ -61,7 +63,7 @@ const WhyImpelox: React.FC = () => {
               background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
             }}
           >
-            About Us →
+            {t('whyImpelox.aboutUs')} →
           </Link>
         </div>
       </div>

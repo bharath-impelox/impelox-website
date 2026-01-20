@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const ServicesHero: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-white py-20 px-6">
       <div className="container mx-auto max-w-6xl">
@@ -9,10 +11,10 @@ const ServicesHero: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              When Off-the-Shelf Isn't Enough
+              {t('servicesPage.hero.title')}
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Our products solve most problems. But sometimes you need something built specifically for your business.
+              {t('servicesPage.hero.description')}
             </p>
             
             {/* CTA Buttons */}
@@ -23,13 +25,13 @@ const ServicesHero: React.FC = () => {
                   background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                 }}
               >
-                Discuss Your Project
+                {t('servicesPage.hero.discussProject')}
               </button>
               <Link
                 to="/products"
                 className="bg-white border-2 border-[#1B44FE] text-[#1B44FE] px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium text-base"
               >
-                See Our Products First
+                {t('servicesPage.hero.seeProducts')}
               </Link>
             </div>
           </div>

@@ -1,17 +1,19 @@
 import React from 'react';
 import { Eye } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const AboutHero: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto">
         {/* Centered Heading */}
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            Empowering Businesses<br />to Go AI-First
+            {t('aboutPage.hero.title')}
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We are driven by a passion for designing and deploying smart AI agents and automation systems that reduce repetitive work, make decisions based on data, and create better customer experiences.
+            {t('aboutPage.hero.description')}
           </p>
         </div>
 
@@ -37,10 +39,10 @@ const AboutHero: React.FC = () => {
               <div className="mt-20">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-[#1B44FE] text-sm">•</span>
-                  <h3 className="text-[#1B44FE] font-bold text-sm uppercase">OUR VISION</h3>
+                  <h3 className="text-[#1B44FE] font-bold text-sm uppercase">{t('aboutPage.hero.vision.tag')}</h3>
                 </div>
                 <p className="text-base text-gray-600 leading-relaxed">
-                  To build a future where technology works quietly in the background, removing friction from everyday business operations without manual effort.
+                  {t('aboutPage.hero.vision.text')}
                 </p>
               </div>
             </div>
@@ -55,10 +57,10 @@ const AboutHero: React.FC = () => {
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-white text-sm">•</span>
-                    <h3 className="text-white font-bold text-sm uppercase">OUR MISSION</h3>
+                    <h3 className="text-white font-bold text-sm uppercase">{t('aboutPage.hero.mission.tag')}</h3>
                   </div>
                   <p className="text-sm text-white/90 leading-relaxed">
-                    To empower businesses to run on AI agents by placing them at the center of their principal workflows, decisions, and customer interactions.
+                    {t('aboutPage.hero.mission.text')}
                   </p>
                 </div>
               </div>

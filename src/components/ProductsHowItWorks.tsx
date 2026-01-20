@@ -1,35 +1,37 @@
 import React from 'react';
 import { Camera, LayoutGrid, ClipboardCheck, CalendarPlus, FileText, Percent, RotateCcw } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ProductsHowItWorks: React.FC = () => {
+  const { t } = useTranslation();
   const steps = [
     {
       icon: Camera,
-      title: 'Contact captures inquiry',
+      title: t('productsPage.howItWorks.steps.contactCaptures'),
     },
     {
       icon: LayoutGrid,
-      title: 'CRM creates lead automatically',
+      title: t('productsPage.howItWorks.steps.crmCreates'),
     },
     {
       icon: ClipboardCheck,
-      title: 'Na2 engages instantly',
+      title: t('productsPage.howItWorks.steps.na2Engages'),
     },
     {
       icon: CalendarPlus,
-      title: 'Calendar books the meeting',
+      title: t('productsPage.howItWorks.steps.calendarBooks'),
     },
     {
       icon: FileText,
-      title: 'PM tracks follow-ups',
+      title: t('productsPage.howItWorks.steps.pmTracks'),
     },
     {
       icon: Percent,
-      title: 'Pricing and billing sends quote',
+      title: t('productsPage.howItWorks.steps.pricingSends'),
     },
     {
       icon: RotateCcw,
-      title: 'Na2 follows up until paid',
+      title: t('productsPage.howItWorks.steps.na2Follows'),
     },
   ];
 
@@ -51,9 +53,9 @@ const ProductsHowItWorks: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left - Title */}
           <div>
-            <p className="text-[#0040C1] text-sm mb-2">• HOW IT WORKS TOGETHER</p>
+            <p className="text-[#0040C1] text-sm mb-2">• {t('productsPage.howItWorks.tag')}</p>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              From first contact to payment - fully automated
+              {t('productsPage.howItWorks.title')}
             </h2>
           </div>
 
@@ -90,7 +92,7 @@ const ProductsHowItWorks: React.FC = () => {
 
         {/* Connects with Section */}
         <div className="text-center mt-16">
-          <h3 className="text-sm font-normal text-gray-500 mb-6">Connects with</h3>
+          <h3 className="text-sm font-normal text-gray-500 mb-6">{t('productsPage.howItWorks.connectsWith')}</h3>
           <div className="flex flex-wrap justify-center items-center gap-8">
             <img src="/images/na2-communication.png" alt="Communication Logos" className="h-8 opacity-60" />
           </div>

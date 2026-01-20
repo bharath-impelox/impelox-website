@@ -1,7 +1,8 @@
 import React from 'react';
-
+import { useTranslation } from 'react-i18next';
 
 const GrowthMetrics: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gray-50 py-20 px-6 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -15,10 +16,10 @@ const GrowthMetrics: React.FC = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2 mb-2">
             <span className="text-[#0040C1] text-sm">•</span>
-            <p className="text-[#0040C1] text-sm">OUR STATISTICS</p>
+            <p className="text-[#0040C1] text-sm">{t('aboutPage.growthMetrics.tag')}</p>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            See our growth
+            {t('aboutPage.growthMetrics.title')}
           </h2>
         </div>
 
@@ -40,12 +41,12 @@ const GrowthMetrics: React.FC = () => {
             style={{ borderRadius: '5.75rem' }}
           >
             <div className="flex items-center gap-2 flex-shrink-0">
-              <span className="text-[#2970FF] text-5xl font-bold">1M</span>
+              <span className="text-[#2970FF] text-5xl font-bold">{t('aboutPage.growthMetrics.oneMillion')}</span>
               <span className="text-[#2970FF] text-5xl font-bold">↑</span>
             </div>
             <div className="ml-4 text-gray-600 text-sm">
-              <div>Support for Platform</div>
-              <div>Users</div>
+              <div>{t('aboutPage.growthMetrics.supportPlatformUsersLine1')}</div>
+              <div>{t('aboutPage.growthMetrics.supportPlatformUsersLine2')}</div>
             </div>
           </div>
 
@@ -64,10 +65,10 @@ const GrowthMetrics: React.FC = () => {
             className="md:col-span-5 bg-white p-8 shadow-sm min-h-[180px] flex items-center"
             style={{ borderRadius: '5.75rem' }}
           >
-            <div className="text-[#2970FF] text-5xl font-bold flex-shrink-0">500k+</div>
+            <div className="text-[#2970FF] text-5xl font-bold flex-shrink-0">{t('aboutPage.growthMetrics.fiveHundredK')}</div>
             <div className="ml-4 text-gray-600 text-sm">
-              <div>Revenue-Generating</div>
-              <div>Transactions</div>
+              <div>{t('aboutPage.growthMetrics.revenueGeneratingLine1')}</div>
+              <div>{t('aboutPage.growthMetrics.revenueGeneratingLine2')}</div>
             </div>
           </div>
 
@@ -87,10 +88,10 @@ const GrowthMetrics: React.FC = () => {
               background: 'linear-gradient(97.66deg, #2D58D9 45%, #BFD7FF 100%)'
             }}
           >
-            <div className="text-white text-5xl font-bold mb-2">3</div>
+            <div className="text-white text-5xl font-bold mb-2">{t('aboutPage.growthMetrics.three')}</div>
             <div className="text-white/90 text-sm">
-              <div>Global Market</div>
-              <div>India, USA, and Japan</div>
+              <div>{t('aboutPage.growthMetrics.globalMarket')}</div>
+              <div>{t('aboutPage.growthMetrics.countries')}</div>
             </div>
           </div>
         </div>

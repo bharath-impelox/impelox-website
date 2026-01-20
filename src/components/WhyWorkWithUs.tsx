@@ -1,23 +1,25 @@
 import React from 'react';
 import { CircleCheck } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const WhyWorkWithUs: React.FC = () => {
+  const { t } = useTranslation();
   const benefits = [
     {
-      title: 'Regulated Industry Expertise',
-      description: 'Healthcare, insurance, fintech. We understand compliance constraints.',
+      title: t('servicesPage.whyWorkWithUs.regulatedExpertise.title'),
+      description: t('servicesPage.whyWorkWithUs.regulatedExpertise.description'),
     },
     {
-      title: '20+ Engineers',
-      description: 'Full team in Chennai. Enterprise-quality systems built to scale.',
+      title: t('servicesPage.whyWorkWithUs.engineers.title'),
+      description: t('servicesPage.whyWorkWithUs.engineers.description'),
     },
     {
-      title: 'We Move Fast',
-      description: 'We\'ve built production platforms overnight when deadlines demanded it.',
+      title: t('servicesPage.whyWorkWithUs.moveFast.title'),
+      description: t('servicesPage.whyWorkWithUs.moveFast.description'),
     },
     {
-      title: 'We Stay Until It Works',
-      description: 'No documentation handoffs. We implement, test, iterate until you see results.',
+      title: t('servicesPage.whyWorkWithUs.stayUntilWorks.title'),
+      description: t('servicesPage.whyWorkWithUs.stayUntilWorks.description'),
     },
   ];
 
@@ -25,9 +27,9 @@ const WhyWorkWithUs: React.FC = () => {
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-[#0040C1] text-sm mb-2 uppercase">• WHY US</p>
+          <p className="text-[#0040C1] text-sm mb-2 uppercase">• {t('servicesPage.whyWorkWithUs.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Why Work With Us
+            {t('servicesPage.whyWorkWithUs.title')}
           </h2>
         </div>
 

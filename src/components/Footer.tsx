@@ -1,32 +1,34 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const footerLinks = {
-    Product: [
-      'Na2 Platform',
-      'CRM',
-      'Project Management',
-      'Contact Form',
-      'Calendar',
-      'Pricing & Billing',
+    [t('footer.product')]: [
+      t('footer.na2Platform'),
+      t('footer.crm'),
+      t('footer.projectManagement'),
+      t('footer.contactForm'),
+      t('footer.calendar'),
+      t('footer.pricingBilling'),
     ],
-    Industries: [
-      'Healthcare',
-      'Hospitality',
-      'Sales',
-      'Insurance',
+    [t('footer.industries')]: [
+      t('footer.healthcare'),
+      t('footer.hospitality'),
+      t('footer.sales'),
+      t('footer.insurance'),
     ],
-    'Bespoke Agent Development': [
-      'Bespoke Agent Development',
-      'Chatbot with RAG',
-      'Workflow Automation',
-      'AI SaaS Implementation',
+    [t('footer.bespokeAgentDevelopment')]: [
+      t('footer.bespokeAgentDevelopment'),
+      t('footer.chatbotRAG'),
+      t('footer.workflowAutomation'),
+      t('footer.aiSaaSImplementation'),
     ],
-    Company: [
-      'About Impelox',
-      'Careers',
-      'Blog',
-      'Contact',
+    [t('footer.company')]: [
+      t('footer.aboutImpelox'),
+      t('footer.careers'),
+      t('footer.blog'),
+      t('footer.contact'),
     ],
   };
 
@@ -70,12 +72,12 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             {/* Copyright - Bottom Left */}
             <div className="text-gray-600 text-sm">
-              © 2026 Impelox Technologies. All rights reserved. Chennai, India
+              {t('footer.copyright')}
             </div>
 
             {/* Connect - Bottom Right */}
             <div className="text-gray-600 text-sm">
-              Connect:{' '}
+              {t('footer.connect')}{' '}
               <a href="mailto:hello@impelox.com" className="hover:text-gray-900 transition-colors">
                 hello@impelox.com
               </a>
@@ -85,7 +87,7 @@ const Footer: React.FC = () => {
               </a>
               {' | '}
               <a href="#" className="hover:text-gray-900 transition-colors">
-                Schedule a Call
+                {t('footer.scheduleCall')}
               </a>
             </div>
           </div>

@@ -1,28 +1,30 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const FAQ: React.FC = () => {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
     {
-      question: 'How is Na2 different from a chatbot?',
-      answer: 'Multi-agent platform executing complete workflows across all channels — not just Q&A.',
+      question: t('productNa2Page.faq.questions.q1'),
+      answer: t('productNa2Page.faq.answers.a1'),
     },
     {
-      question: 'Can Na2 make phone calls?',
+      question: t('productNa2Page.faq.questions.q2'),
       answer: '',
     },
     {
-      question: 'What languages?',
+      question: t('productNa2Page.faq.questions.q3'),
       answer: '',
     },
     {
-      question: 'Implementation time?',
+      question: t('productNa2Page.faq.questions.q4'),
       answer: '',
     },
     {
-      question: 'Is it secure?',
+      question: t('productNa2Page.faq.questions.q5'),
       answer: '',
     },
   ];
@@ -33,15 +35,15 @@ const FAQ: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left */}
           <div>
-            <p className="text-[#0040C1] text-sm mb-2">• FAQ</p>
+            <p className="text-[#0040C1] text-sm mb-2">• {t('productNa2Page.faq.tag')}</p>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
+              {t('productNa2Page.faq.title')}
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Here's everything you need to know before getting started.
+              {t('productNa2Page.faq.description')}
             </p>
             <div className="bg-gray-100 rounded-xl p-6 space-y-4">
-              <p className="text-gray-900 font-medium">Still have questions?</p>
+              <p className="text-gray-900 font-medium">{t('productNa2Page.faq.stillHaveQuestions')}</p>
               <Link
                 to="/contact-us"
                 className="inline-block text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium"
@@ -49,7 +51,7 @@ const FAQ: React.FC = () => {
                   background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                 }}
               >
-                Contact Us
+                {t('productNa2Page.faq.contactUs')}
               </Link>
             </div>
           </div>

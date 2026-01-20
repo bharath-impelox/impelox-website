@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ServicesCTA: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 px-6">
       <div className="container mx-auto">
@@ -14,13 +16,13 @@ const ServicesCTA: React.FC = () => {
           }}
         >
           <div className="relative z-10">
-            <p className="text-[#0040C1] text-sm mb-4">• CONNECT</p>
+            <p className="text-[#0040C1] text-sm mb-4">• {t('servicesPage.cta.tag')}</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Have a Project in Mind?
+              {t('servicesPage.cta.title')}
             </h2>
             
             <p className="text-gray-700 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              Tell us what you're trying to solve. We'll let you know if products or services are the right path.
+              {t('servicesPage.cta.description')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
@@ -30,18 +32,18 @@ const ServicesCTA: React.FC = () => {
                   background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                 }}
               >
-                Schedule a Consultation
+                {t('servicesPage.cta.scheduleConsultation')}
               </button>
               
               <button
                 className="bg-white text-[#1B44FE] px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-base whitespace-nowrap border-2 border-[#1B44FE]"
               >
-                Email Us Directly
+                {t('servicesPage.cta.emailDirectly')}
               </button>
             </div>
 
             <p className="text-gray-600 text-sm">
-              Free consultation. No obligation. English and Japanese.
+              {t('servicesPage.cta.available')}
             </p>
           </div>
         </div>
