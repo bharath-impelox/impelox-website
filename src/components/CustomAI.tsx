@@ -1,9 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const CustomAI: React.FC = () => {
   const { t } = useTranslation();
+  
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    hover: {
+      y: -5,
+      scale: 1.02,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
   const services = [
     {
       title: t('customAI.chatbotRAG.title'),
@@ -36,9 +77,15 @@ const CustomAI: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white py-20 px-6 border border-blue-200">
+    <motion.section 
+      className="bg-white py-20 px-6 border border-blue-200"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={containerVariants}
+    >
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <motion.div className="text-center mb-16" variants={itemVariants}>
           <p className="text-[#0040C1] text-sm mb-2">• {t('customAI.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('customAI.title')}
@@ -46,9 +93,12 @@ const CustomAI: React.FC = () => {
           <p className="text-base text-gray-700 max-w-2xl mx-auto">
             {t('customAI.description')}
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-10 gap-6 max-w-6xl mx-auto">
+        <motion.div 
+          className="grid grid-cols-10 gap-6 max-w-6xl mx-auto"
+          variants={containerVariants}
+        >
           {services.map((service, index) => {
             let colSpan = '';
             if (index === 0) colSpan = 'col-span-4'; // 40% - Chatbot with RAG
@@ -57,7 +107,7 @@ const CustomAI: React.FC = () => {
             else if (index === 3) colSpan = 'col-span-4'; // 40% - AI SaaS Implementation
             
             return (
-            <div
+            <motion.div
               key={index}
               className={`${colSpan} rounded-xl overflow-hidden flex h-full ${
                 service.visual === 'chatbot'
@@ -69,6 +119,8 @@ const CustomAI: React.FC = () => {
                   : 'bg-white border border-gray-200 flex-col'
               }`}
               style={service.visual === 'chatbot' ? { backgroundColor: '#0D121C' } : {}}
+              variants={cardVariants}
+              whileHover="hover"
             >
               {/* Content Section - For Chatbot, content goes on top */}
               {service.visual === 'chatbot' && (
@@ -92,63 +144,97 @@ const CustomAI: React.FC = () => {
                     {service.subtitle}
                   </p>
                   {service.hasButton && (
-                    <Link
-                      to="/services"
-                      className="inline-block text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity font-medium text-sm w-fit"
-                      style={{
-                        background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
-                      }}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                     >
-                      {t('customAI.bespokeAgent.exploreServices')} →
-                    </Link>
+                      <Link
+                        to="/services"
+                        className="inline-block text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity font-medium text-sm w-fit"
+                        style={{
+                          background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
+                        }}
+                      >
+                        {t('customAI.bespokeAgent.exploreServices')} →
+                      </Link>
+                    </motion.div>
                   )}
                 </div>
               )}
               
               {/* Visual Section */}
-              <div className={`${service.visual === 'workflow' || service.visual === 'bespoke' ? 'w-1/2 h-auto' : service.visual === 'chatbot' ? 'h-64 w-full' : 'h-64 w-full'} flex items-center justify-center relative flex-shrink-0 ${
+              <motion.div 
+                className={`${service.visual === 'workflow' || service.visual === 'bespoke' ? 'w-1/2 h-auto' : service.visual === 'chatbot' ? 'h-64 w-full' : 'h-64 w-full'} flex items-center justify-center relative flex-shrink-0 ${
                 service.visual === 'chatbot' ? '' : 
                 service.visual === 'saas' ? 'bg-gray-900' : 
                 service.visual === 'workflow' || service.visual === 'bespoke' ? 'bg-transparent' :
                 'bg-gray-100'
-              }`} style={service.visual === 'chatbot' ? { backgroundColor: '#0D121C' } : {}}>
+              }`} 
+                style={service.visual === 'chatbot' ? { backgroundColor: '#0D121C' } : {}}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
                 {service.visual === 'chatbot' && (
-                  <div className="w-full h-full flex items-center justify-center">
+                  <motion.div 
+                    className="w-full h-full flex items-center justify-center"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                  >
                     <img 
                       src="/images/chatbot-rag.png" 
                       alt="Chatbot with RAG" 
                       className="h-full w-auto object-contain mx-auto"
                     />
-                  </div>
+                  </motion.div>
                 )}
                 {service.visual === 'bespoke' && (
-                  <div className="w-full h-full flex items-center justify-center">
+                  <motion.div 
+                    className="w-full h-full flex items-center justify-center"
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                  >
                     <img 
                       src="/images/bespoke-agent.png" 
                       alt="Bespoke Agent Development" 
                       className="w-full h-full object-cover"
                     />
-                  </div>
+                  </motion.div>
                 )}
                 {service.visual === 'workflow' && (
-                  <div className="w-full h-full flex items-center justify-center">
+                  <motion.div 
+                    className="w-full h-full flex items-center justify-center"
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                  >
                     <img 
                       src="/images/workflow-automation.png" 
                       alt="Workflow Automation" 
                       className="w-full h-full object-cover"
                     />
-                  </div>
+                  </motion.div>
                 )}
                 {service.visual === 'saas' && (
-                  <div className="w-full h-full flex items-center justify-center">
+                  <motion.div 
+                    className="w-full h-full flex items-center justify-center"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                  >
                     <img 
                       src="/images/ai-saas-code.png" 
                       alt="AI SaaS Implementation" 
                       className="w-full h-full object-cover"
                     />
-                  </div>
+                  </motion.div>
                 )}
-              </div>
+              </motion.div>
 
               {/* Content Section */}
               {service.visual !== 'chatbot' && service.visual !== 'bespoke' && (
@@ -160,24 +246,29 @@ const CustomAI: React.FC = () => {
                     {service.subtitle}
                   </p>
                   {service.hasButton && (
-                    <Link
-                      to="/services"
-                      className="inline-block text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity font-medium text-sm w-fit"
-                      style={{
-                        background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
-                      }}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                     >
-                      {t('customAI.bespokeAgent.exploreServices')} →
-                    </Link>
+                      <Link
+                        to="/services"
+                        className="inline-block text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity font-medium text-sm w-fit"
+                        style={{
+                          background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
+                        }}
+                      >
+                        {t('customAI.bespokeAgent.exploreServices')} →
+                      </Link>
+                    </motion.div>
                   )}
                 </div>
               )}
-            </div>
+            </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,9 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const ProductSuite: React.FC = () => {
   const { t } = useTranslation();
+  
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    hover: {
+      y: -8,
+      scale: 1.02,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
   const products = [
     { 
       title: t('productSuite.crm.title'), 
@@ -55,9 +96,15 @@ const ProductSuite: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-20 px-6">
+    <motion.section 
+      className="bg-gray-50 py-20 px-6"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={containerVariants}
+    >
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <motion.div className="text-center mb-16" variants={itemVariants}>
           <p className="text-[#0040C1] text-sm mb-2">• {t('productSuite.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('productSuite.title')} <span className="text-[#1B44FE]">{t('productSuite.titleHighlight')}</span> {t('productSuite.titleSuffix')}
@@ -65,49 +112,81 @@ const ProductSuite: React.FC = () => {
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
             {t('productSuite.description')}
           </p>
-        </div>
+        </motion.div>
 
         <div className="max-w-6xl mx-auto">
           {/* First row - 2 cards */}
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <motion.div 
+            className="grid md:grid-cols-2 gap-6 mb-6"
+            variants={containerVariants}
+          >
             {products.slice(0, 2).map((product, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-[#EDF1FC] rounded-lg flex items-center justify-center mb-4" >
+              <motion.div 
+                key={index} 
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                variants={cardVariants}
+                whileHover="hover"
+              >
+                <motion.div 
+                  className="w-12 h-12 bg-[#EDF1FC] rounded-lg flex items-center justify-center mb-4"
+                  whileHover={{ rotate: 360, scale: 1.1 }}
+                  transition={{ duration: 0.5 }}
+                >
                   {product.icon}
-                </div>
+                </motion.div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h3>
                 <p className="text-gray-600 text-sm">{product.description}</p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {/* Second row - 3 cards */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <motion.div 
+            className="grid md:grid-cols-3 gap-6"
+            variants={containerVariants}
+          >
             {products.slice(2).map((product, index) => (
-              <div key={index + 2} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-[#EDF1FC] rounded-lg flex items-center justify-center mb-4" >
+              <motion.div 
+                key={index + 2} 
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                variants={cardVariants}
+                whileHover="hover"
+              >
+                <motion.div 
+                  className="w-12 h-12 bg-[#EDF1FC] rounded-lg flex items-center justify-center mb-4"
+                  whileHover={{ rotate: 360, scale: 1.1 }}
+                  transition={{ duration: 0.5 }}
+                >
                   {product.icon}
-                </div>
+                </motion.div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h3>
                 <p className="text-gray-600 text-sm">{product.description}</p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
 
-        <div className="text-center mt-12">
-          <Link
-            to="/products"
-            className="inline-block text-white px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium"
-            style={{
-              background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
-            }}
+        <motion.div 
+          className="text-center mt-12"
+          variants={itemVariants}
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            {t('productSuite.exploreAll')} →
-          </Link>
-        </div>
+            <Link
+              to="/products"
+              className="inline-block text-white px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium"
+              style={{
+                background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
+              }}
+            >
+              {t('productSuite.exploreAll')} →
+            </Link>
+          </motion.div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

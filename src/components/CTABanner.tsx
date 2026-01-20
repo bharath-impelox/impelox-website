@@ -1,14 +1,46 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const CTABanner: React.FC = () => {
   const { t } = useTranslation();
+  
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <section className="py-20 bg-gray-50 px-6">
+    <motion.section 
+      className="py-20 bg-gray-50 px-6"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={containerVariants}
+    >
       <div className="container mx-auto">
-        <div 
+        <motion.div 
           className="rounded-2xl p-12 md:p-16 text-center relative overflow-hidden"
+          variants={containerVariants}
         >
           {/* Rotated background image */}
           <div 
@@ -39,40 +71,59 @@ const CTABanner: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <motion.div className="relative z-10" variants={containerVariants}>
+            <motion.h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+              variants={itemVariants}
+            >
               {t('ctaBanner.title')}
-            </h2>
+            </motion.h2>
             
-            <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-95">
+            <motion.p 
+              className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-95"
+              variants={itemVariants}
+            >
               {t('ctaBanner.description')}
-            </p>
+            </motion.p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-              <button
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6"
+              variants={itemVariants}
+            >
+              <motion.button
                 className="text-white px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-base whitespace-nowrap"
                 style={{
                   background: 'radial-gradient(88% 75% at 50% 50%, #1B44FE 37.45%, #5375FE 100%)'
                 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 {t('ctaBanner.scheduleDemo')} →
-              </button>
+              </motion.button>
               
-              <Link
-                to="/contact-us"
-                className="bg-white text-[#1B44FE] px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-base whitespace-nowrap inline-block"
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                {t('ctaBanner.contactUs')}
-              </Link>
-            </div>
+                <Link
+                  to="/contact-us"
+                  className="bg-white text-[#1B44FE] px-8 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium text-base whitespace-nowrap inline-block"
+                >
+                  {t('ctaBanner.contactUs')}
+                </Link>
+              </motion.div>
+            </motion.div>
 
-            <p className="text-white text-sm opacity-90">
+            <motion.p 
+              className="text-white text-sm opacity-90"
+              variants={itemVariants}
+            >
               {t('ctaBanner.available')}
-            </p>
-          </div>
-        </div>
+            </motion.p>
+          </motion.div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

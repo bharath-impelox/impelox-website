@@ -1,8 +1,56 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Testimonials: React.FC = () => {
   const { t } = useTranslation();
+  
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    exit: {
+      opacity: 0,
+      x: 50,
+      transition: {
+        duration: 0.3,
+      },
+    },
+    hover: {
+      y: -5,
+      scale: 1.02,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
   const testimonials = [
     {
       quote: t('testimonials.testimonial1.quote'),
@@ -37,9 +85,15 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="bg-white py-20 px-6">
+    <motion.section 
+      className="bg-white py-20 px-6"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={containerVariants}
+    >
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <motion.div className="text-center mb-16" variants={itemVariants}>
           <p className="text-[#0040C1] text-sm mb-2">• {t('testimonials.tag')}</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('testimonials.title')}
@@ -47,52 +101,56 @@ const Testimonials: React.FC = () => {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t('testimonials.description')}
           </p>
-        </div>
+        </motion.div>
 
         <div className="max-w-6xl mx-auto relative">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.slice(currentIndex, currentIndex + 3).map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 rounded-xl px-10 py-2 hover:shadow-lg transition-shadow"
-              >
-                {/* <div className="flex space-x-1 text-yellow-400 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div> */}
-                <p className="text-gray-700 mb-4 italic">"{testimonial.quote}"</p>
-                <div>
-                  <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-gray-600">{testimonial.company}</div>
-                </div>
-              </div>
-            ))}
+            <AnimatePresence mode="wait">
+              {testimonials.slice(currentIndex, currentIndex + 3).map((testimonial, index) => (
+                <motion.div
+                  key={`${currentIndex}-${index}`}
+                  className="bg-gray-50 rounded-xl px-10 py-2 hover:shadow-lg transition-shadow"
+                  variants={cardVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  whileHover="hover"
+                >
+                  <p className="text-gray-700 mb-4 italic">"{testimonial.quote}"</p>
+                  <div>
+                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
+                    <div className="text-sm text-gray-600">{testimonial.company}</div>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
 
           <div className="flex justify-center space-x-4 mt-8">
-            <button
+            <motion.button
               onClick={prevTestimonial}
               className="w-12 h-12 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors flex items-center justify-center"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
               <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               onClick={nextTestimonial}
               className="w-12 h-12 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors flex items-center justify-center"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
               <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
