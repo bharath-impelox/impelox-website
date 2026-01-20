@@ -103,9 +103,9 @@ const Testimonials: React.FC = () => {
         </motion.div>
 
         <div className="max-w-6xl mx-auto relative">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <AnimatePresence mode="wait">
-              {testimonials.slice(currentIndex, currentIndex + 3).map((testimonial, index) => (
+              {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial, index) => (
                 <motion.div
                   key={`${currentIndex}-${index}`}
                   className="bg-gray-50 rounded-xl px-10 py-2 hover:shadow-lg transition-shadow"

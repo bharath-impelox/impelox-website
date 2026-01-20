@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import PartnerLogos from '../components/PartnerLogos';
+// import PartnerLogos from '../components/PartnerLogos';
 import NextAction from '../components/NextAction';
 import RegulatedIndustries from '../components/RegulatedIndustries';
 import Na2InAction from '../components/Na2InAction';
@@ -16,7 +16,7 @@ const Home = () => {
     <div className="app">
       <Header />
       <Hero />
-      <PartnerLogos />
+      {/* <PartnerLogos /> */}
       <NextAction />
       <RegulatedIndustries />
       <Na2InAction />

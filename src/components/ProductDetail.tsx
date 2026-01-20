@@ -18,7 +18,7 @@ interface ProductDetailProps {
 const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
   const { t } = useTranslation();
   // Use CRM image for CRM product, or use provided image, or placeholder
-  const imageSrc = product.image || (product.id === 'crm' ? '/images/crm.png' : null);
+  const imageSrc = product.image || (product.id === 'crm' ? '/images/crm.png' : '/images/crm.png');
 
   return (
     <div className="py-12">

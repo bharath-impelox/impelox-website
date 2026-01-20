@@ -53,7 +53,11 @@ const AIDeployment: React.FC = () => {
             
             {/* Card */}
             <div className="bg-white border border-gray-200 rounded-xl p-12 shadow-sm relative z-10 h-full flex items-center justify-center min-h-[400px]">
-              <p className="text-gray-400 text-lg font-medium">IMAGE</p>
+              <img 
+                src="/images/undraw_process_0wew.svg" 
+                alt="AI Deployment Process" 
+                className="w-full h-auto max-w-md object-contain"
+              />
             </div>
           </div>
         </div>

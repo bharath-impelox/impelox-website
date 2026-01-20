@@ -98,10 +98,12 @@ const PreConfiguredIndustry: React.FC = () => {
               {t('productNa2Page.preConfigured.description')}
             </p>
             
-            <div className="bg-white border border-gray-300 rounded-xl p-12 h-96 flex flex-col items-center justify-end relative">
-              <p className="text-gray-400 text-sm absolute bottom-4">
-                {t('productNa2Page.preConfigured.demoPlaceholder')}
-              </p>
+            <div className="bg-white border border-gray-300 rounded-xl p-12 h-96 flex items-center justify-center">
+              <img 
+                src="/images/undraw_booking_1ztt.svg" 
+                alt="Booking illustration" 
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </div>

@@ -73,7 +73,7 @@ const GrowthMetrics: React.FC = () => {
           </div>
 
           {/* Card 5 - Tablet Image (Smaller) */}
-          <div className="md:col-span-2 rounded-xl overflow-hidden shadow-sm min-h-[180px] relative z-10">
+          <div className="md:col-span-2 rounded-xl overflow-hidden  min-h-[180px] relative z-10">
             <img 
               src="/images/tablet_card_single.png" 
               alt="Tablet card" 

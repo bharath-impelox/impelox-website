@@ -11,6 +11,7 @@ const WhatWeBuild: React.FC = () => {
       description: t('servicesPage.whatWeBuild.bespokeAgent.description'),
       hasVisual: false,
       iconPosition: 'top-left',
+      visualImage: '/images/na2_home.png',
     },
     {
       icon: MessageSquare,
@@ -34,6 +35,7 @@ const WhatWeBuild: React.FC = () => {
       description: t('servicesPage.whatWeBuild.aiSaaS.description'),
       hasVisual: false,
       iconPosition: 'top-left',
+      visualImage: '/images/ai-saas-code.png',
     },
   ];
 
@@ -133,11 +135,19 @@ const WhatWeBuild: React.FC = () => {
                     )}
                   </>
                 ) : (
-                  /* For cards without visuals: vertical layout (image placeholder top, text below) */
+                  /* For cards without visuals: vertical layout (image top, text below) */
                   <div className="flex flex-col w-full h-full">
-                    {/* Image Placeholder - Top (60-70% of card height) */}
-                    <div className="w-full bg-white flex items-center justify-center flex-1" style={{ minHeight: '200px' }}>
-                      <p className="text-gray-400 text-xs">Image placeholder</p>
+                    {/* Image - Top */}
+                    <div className="w-full bg-white flex items-center justify-center overflow-hidden" style={{ height: '200px' }}>
+                      {service.visualImage ? (
+                        <img 
+                          src={service.visualImage} 
+                          alt={service.title}
+                          className="w-full h-full object-contain p-4 max-h-[200px]"
+                        />
+                      ) : (
+                        <p className="text-gray-400 text-xs">Image placeholder</p>
+                      )}
                     </div>
                     {/* Text Content - Bottom */}
                     <div className="p-6 flex flex-col">

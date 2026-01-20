@@ -74,8 +74,9 @@ const OurValues: React.FC = () => {
         >
           <div className="grid md:grid-cols-2 gap-12">
             {/* Left - Empty white space for image */}
-            <div className="bg-white rounded-lg min-h-[300px] flex items-center justify-center">
-              <p className="text-gray-400 text-sm">Image placeholder</p>
+            <div className="bg-white rounded-lg min-h-[300px] flex items-center justify-center overflow-hidden">
+              {/* <p className="text-gray-400 text-sm">Image placeholder</p> */}
+              <img src="/images/team_out.jpeg" className='h-full w-full' alt="" />
             </div>
 
             {/* Right - Life at Impelox content */}

@@ -5,24 +5,14 @@ const MeetFounders: React.FC = () => {
   const { t } = useTranslation();
   const founders = [
     {
-      name: 'Brandon Stevenson',
-      role: 'CEO',
-      image: '/images/founder-1.png',
+      name: 'Venkatesh TV',
+      role: 'Founder & CEO',
+      image: '/images/Venkatesh.jpeg',
     },
     {
-      name: 'Wayne Rooney',
-      role: 'CTO',
-      image: '/images/founder-2.png',
-    },
-    {
-      name: 'Robert Fox',
-      role: 'CPO',
-      image: '/images/founder-3.png',
-    },
-    {
-      name: 'Jacob Jones',
-      role: 'COO',
-      image: '/images/founder-4.png',
+      name: 'Thilaga Ramalingam',
+      role: 'Co-Founder & COO',
+      image: '/images/Thilaga.jpeg',
     },
   ];
 

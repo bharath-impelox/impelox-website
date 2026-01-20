@@ -8,7 +8,7 @@ import MeetFounders from '../components/MeetFounders';
 import AboutCTA from '../components/AboutCTA';
 import AIDeployment from '../components/AIDeployment';
 import ContactForm from '../components/ContactForm';
-import TrustedBrands from '../components/TrustedBrands';
+// import TrustedBrands from '../components/TrustedBrands';
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
       <AboutCTA />
       <AIDeployment />
       <ContactForm />
-      <TrustedBrands />
+      {/* <TrustedBrands /> */}
       <Footer />
     </div>
   );

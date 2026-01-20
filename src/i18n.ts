@@ -11,6 +11,21 @@ i18n
     fallbackLng: 'en',
     debug: false,
     supportedLngs: ['en', 'jp'],
+    detection: {
+      // Order of detection methods
+      order: ['navigator', 'htmlTag', 'path', 'subdomain'],
+      // Cache user language preference
+      caches: ['localStorage'],
+      // Convert language codes: ja -> jp, ja-JP -> jp
+      convertDetectedLanguage: (lng: string) => {
+        // Convert Japanese language codes to 'jp'
+        if (lng.startsWith('ja')) {
+          return 'jp';
+        }
+        // Default to English for all other languages
+        return 'en';
+      },
+    },
     interpolation: {
       escapeValue: false,
     },

@@ -13,19 +13,19 @@ const FAQ: React.FC = () => {
     },
     {
       question: t('productNa2Page.faq.questions.q2'),
-      answer: '',
+      answer: t('productNa2Page.faq.answers.a2'),
     },
     {
       question: t('productNa2Page.faq.questions.q3'),
-      answer: '',
+      answer: t('productNa2Page.faq.answers.a3'),
     },
     {
       question: t('productNa2Page.faq.questions.q4'),
-      answer: '',
+      answer: t('productNa2Page.faq.answers.a4'),
     },
     {
       question: t('productNa2Page.faq.questions.q5'),
-      answer: '',
+      answer: t('productNa2Page.faq.answers.a5'),
     },
   ];
 

@@ -16,7 +16,9 @@
     "exploreProducts": "Explore Our Products",
     "talkToTeam": "Talk to Our Team",
     "productivity": "10x Productivity",
-    "happyUsers": "50K+ Happy Users"
+    "happyUsers": "50K+ Happy Users",
+    "flagshipProduct": "FLAGSHIP PRODUCT",
+    "nextActionNa2": "Next Action (Na2)"
   },
   "partnerLogos": {
     "title": "Powering AI agents at"
@@ -103,24 +105,24 @@
     "title": "What Our Partners Say",
     "description": "When off-the-shelf isn't enough, we build it for you.",
     "testimonial1": {
-      "quote": "\"Venkatesh is extremely professional and the best team to work with. Don't think twice. They deliver exactly what they promise.\".",
+      "quote": "Thank you for the long nights, the passion, and the belief you brought into AURA. Venkatesh and the team have left a real mark on this company. I'm deeply grateful for your contribution to our journey.",
       "name": "Founder",
-      "company": "AI Solutions Company, UAE"
+      "company": "InsureTech Company, UAE"
     },
     "testimonial2": {
-      "quote": "\"I am extremely proud of what we built together. The Impelox team built it — I only guided. Today, Aura's platform is one of the best. When a group of people get together, we can move mountains.\"",
+      "quote": "I am extremely proud of what we built together. The Impelox team built it — I only guided. Today, Aura's platform is one of the best. When a group of people get together, we can move mountains.",
       "name": "Business Head",
       "company": "InsureTech Company, UAE"
     },
     "testimonial3": {
-      "quote": "Implementation was smooth and the results exceeded our expectations.",
-      "name": "Emily Rodriguez",
-      "company": "Government Agency"
+      "quote": "Venkatesh and his team were instrumental in building my AI assistant chatbot system from the ground up. Deep expertise in automation, AI, and SaaS. A king of automation. Highly recommended.",
+      "name": "Founder",
+      "company": "Healthcare Company, France"
     },
     "testimonial4": {
-      "quote": "Outstanding support and innovative solutions. Impelox is the future of AI.",
-      "name": "David Thompson",
-      "company": "Hospitality Inc"
+      "quote": "Venkatesh is extremely professional and the best team to work with. Don't think twice. They deliver exactly what they promise.",
+      "name": "Founder",
+      "company": "AI Solutions Company, UAE"
     }
   },
   "whyImpelox": {
@@ -355,7 +357,10 @@
       "email": "Email",
       "subject": "Subject",
       "message": "Message",
-      "sendMessage": "Send Message"
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Thank you! Your message has been sent successfully.",
+      "errorMessage": "Something went wrong. Please try again."
     },
     "trustedBrands": {
       "title": "Trusted by top-tier brands"
@@ -680,7 +685,11 @@
         "q5": "Is it secure?"
       },
       "answers": {
-        "a1": "Multi-agent platform executing complete workflows across all channels — not just Q&A."
+        "a1": "Multi-agent platform executing complete workflows across all channels — not just Q&A.",
+        "a2": "Yes it can make phone calls",
+        "a3": "It's a multi language",
+        "a4": "1 week",
+        "a5": "Yes"
       }
     },
     "cta": {

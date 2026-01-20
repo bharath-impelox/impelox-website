@@ -92,7 +92,7 @@ const RegulatedIndustries: React.FC = () => {
           {industries.map((industry, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-xl pt-8 pl-8 pr-8 shadow-md hover:shadow-lg transition-shadow flex items-center gap-6"
+              className="bg-white rounded-xl overflow-hidden pt-8 pl-8 pr-8 shadow-md hover:shadow-lg transition-shadow flex items-center gap-6"
               variants={cardVariants}
               whileHover="hover"
             >

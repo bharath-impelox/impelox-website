@@ -39,7 +39,11 @@ const ServicesHero: React.FC = () => {
           {/* Right Visual */}
           <div className="relative">
             <div className="bg-gray-100 rounded-2xl p-8 h-96 flex items-center justify-center">
-              <p className="text-gray-400 text-lg">Product image</p>
+              <img 
+                src="/images/undraw_building-a-website_1wrp.svg" 
+                alt="Building a Website" 
+                className="w-full h-auto max-w-lg object-contain"
+              />
             </div>
           </div>
         </div>

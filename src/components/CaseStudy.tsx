@@ -16,7 +16,11 @@ const CaseStudy: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left - Image */}
           <div className="bg-gray-300 rounded-xl p-12 h-96 flex items-center justify-center">
-            <p className="text-gray-500 text-lg font-medium">IMAGE</p>
+            <img 
+              src="/images/undraw_connected-world_anke.svg" 
+              alt="Connected World" 
+              className="w-full h-full object-contain"
+            />
           </div>
 
           {/* Right - Content */}
